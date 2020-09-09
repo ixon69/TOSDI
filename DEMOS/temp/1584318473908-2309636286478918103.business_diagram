@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:business="business" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <business:BusinessProcess xmi:id="_-h4z0GccEeqiV90BpYf-_Q">
+    <businessItems xmi:type="business:ActorBusinessItem" xmi:id="_-h4z0WccEeqiV90BpYf-_Q" outgoingRelationships="_-h4z02ccEeqiV90BpYf-_Q"/>
+    <businessItems xmi:type="business:TerminalBusinessItem" xmi:id="_-h4z0mccEeqiV90BpYf-_Q" name="terminal" incomingRelationships="_-h4z02ccEeqiV90BpYf-_Q" outgoingRelationships="_-h4z2WccEeqiV90BpYf-_Q"/>
+    <businessItems xmi:type="business:BusinessItemRelationship" xmi:id="_-h4z02ccEeqiV90BpYf-_Q" source="_-h4z0WccEeqiV90BpYf-_Q" target="_-h4z0mccEeqiV90BpYf-_Q"/>
+    <businessItems xmi:type="business:DatabaseBusinessItem" xmi:id="_-h4z1GccEeqiV90BpYf-_Q" name="database" outgoingRelationships="_-h4z2mccEeqiV90BpYf-_Q"/>
+    <businessItems xmi:type="business:InputBusinessItem" xmi:id="_-h4z1WccEeqiV90BpYf-_Q" name="input" outgoingRelationships="_-h4z2GccEeqiV90BpYf-_Q"/>
+    <businessItems xmi:type="business:GearBusinessItem" xmi:id="_-h4z1mccEeqiV90BpYf-_Q" name="Talend Jobs" incomingRelationships="_-h4z2GccEeqiV90BpYf-_Q _-h4z2WccEeqiV90BpYf-_Q _-h4z2mccEeqiV90BpYf-_Q">
+      <assignments xmi:type="business:BusinessAssignment" xmi:id="_-h4z12ccEeqiV90BpYf-_Q" talendItem="_-h4z3GccEeqiV90BpYf-_Q"/>
+    </businessItems>
+    <businessItems xmi:type="business:DirectionalBusinessItemRelationship" xmi:id="_-h4z2GccEeqiV90BpYf-_Q" source="_-h4z1WccEeqiV90BpYf-_Q" target="_-h4z1mccEeqiV90BpYf-_Q"/>
+    <businessItems xmi:type="business:BidirectionalBusinessItemRelationship" xmi:id="_-h4z2WccEeqiV90BpYf-_Q" source="_-h4z0mccEeqiV90BpYf-_Q" target="_-h4z1mccEeqiV90BpYf-_Q"/>
+    <businessItems xmi:type="business:BidirectionalBusinessItemRelationship" xmi:id="_-h4z2mccEeqiV90BpYf-_Q" source="_-h4z1GccEeqiV90BpYf-_Q" target="_-h4z1mccEeqiV90BpYf-_Q"/>
+    <localRepositoryCopy xmi:type="business:Repository" xmi:id="_-h4z22ccEeqiV90BpYf-_Q">
+      <Talenditems xmi:type="business:BusinessProcess" xmi:id="_-h4z3GccEeqiV90BpYf-_Q" id="_NGXkYHD6Edygb6RdKpsKBw" label="anotherOne" assignments="_-h4z12ccEeqiV90BpYf-_Q"/>
+    </localRepositoryCopy>
+  </business:BusinessProcess>
+  <notation:Diagram xmi:id="_-iB9wGccEeqiV90BpYf-_Q" type="Business" name="11913376885881241657578286567349.business_diagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_-iB9wWccEeqiV90BpYf-_Q" type="Note">
+      <children xmi:type="notation:Node" xmi:id="_-iB9wmccEeqiV90BpYf-_Q" type="DiagramName">
+        <element xsi:nil="true"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_-iB9w2ccEeqiV90BpYf-_Q" type="Description">
+        <element xsi:nil="true"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_-iB9xGccEeqiV90BpYf-_Q" description="A Business Model is a non technical view of a business need in data flow management&#xD;&#xA;The Business Modeler is at the core of the Top/Down approach:  it allows any of the key players to take part to the project design. &#xD;&#xA;BMs offer a macroscopic view of the project" fillColor="13369343" lineColor="6737151"/>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-iB9xWccEeqiV90BpYf-_Q" x="36" y="24"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_-iB9xmccEeqiV90BpYf-_Q" type="1009">
+      <children xmi:type="notation:Node" xmi:id="_-iB9x2ccEeqiV90BpYf-_Q" type="4010"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-iB9yGccEeqiV90BpYf-_Q"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_-iB9yWccEeqiV90BpYf-_Q"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_-iB9ymccEeqiV90BpYf-_Q"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_-iB9y2ccEeqiV90BpYf-_Q" lineColor="0"/>
+      <element xmi:type="ecore:EObject" href="#/0/@businessItems.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-iB9zGccEeqiV90BpYf-_Q" x="36" y="216"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_-iB9zWccEeqiV90BpYf-_Q" type="1002">
+      <children xmi:type="notation:Node" xmi:id="_-iB9zmccEeqiV90BpYf-_Q" type="4002"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-iB9z2ccEeqiV90BpYf-_Q"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_-iB90GccEeqiV90BpYf-_Q"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_-iB90WccEeqiV90BpYf-_Q" fillColor="13420443"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_-iB90mccEeqiV90BpYf-_Q" lineColor="0"/>
+      <element xmi:type="ecore:EObject" href="#/0/@businessItems.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-iB902ccEeqiV90BpYf-_Q" x="120" y="210"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_-iB91GccEeqiV90BpYf-_Q" type="1004">
+      <children xmi:type="notation:Node" xmi:id="_-iB91WccEeqiV90BpYf-_Q" type="4004"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-iB91mccEeqiV90BpYf-_Q"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_-iB912ccEeqiV90BpYf-_Q"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_-iB92GccEeqiV90BpYf-_Q" fillColor="12560536"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_-iB92WccEeqiV90BpYf-_Q" lineColor="0"/>
+      <element xmi:type="ecore:EObject" href="#/0/@businessItems.3"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-iB92mccEeqiV90BpYf-_Q" x="345" y="90" width="102" height="91"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_-iB922ccEeqiV90BpYf-_Q" type="1007">
+      <children xmi:type="notation:Node" xmi:id="_-iB93GccEeqiV90BpYf-_Q" type="4007"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-iB93WccEeqiV90BpYf-_Q"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_-iB93mccEeqiV90BpYf-_Q"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_-iB932ccEeqiV90BpYf-_Q" fillColor="13420443"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_-iB94GccEeqiV90BpYf-_Q" lineColor="0"/>
+      <element xmi:type="ecore:EObject" href="#/0/@businessItems.4"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-iB94WccEeqiV90BpYf-_Q" x="168" y="120"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_-iB94mccEeqiV90BpYf-_Q" type="1011">
+      <children xmi:type="notation:Node" xmi:id="_-iB942ccEeqiV90BpYf-_Q" type="4012"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-iB95GccEeqiV90BpYf-_Q"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_-iB95WccEeqiV90BpYf-_Q"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_-iB95mccEeqiV90BpYf-_Q" fillColor="10011046"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_-iB952ccEeqiV90BpYf-_Q"/>
+      <element xmi:type="ecore:EObject" href="#/0/@businessItems.5"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-iB96GccEeqiV90BpYf-_Q" x="264" y="204" width="85" height="86"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_-iB96WccEeqiV90BpYf-_Q" type="Note">
+      <children xmi:type="notation:Node" xmi:id="_-iB96mccEeqiV90BpYf-_Q" type="DiagramName">
+        <element xsi:nil="true"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_-iB962ccEeqiV90BpYf-_Q" type="Description">
+        <element xsi:nil="true"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_-iB97GccEeqiV90BpYf-_Q" description="Select a shape, go on the view assignment and open the associated items (double clic)" fillColor="12632256" lineColor="32768"/>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-iB97WccEeqiV90BpYf-_Q" x="65" y="370" height="37"/>
+    </children>
+    <styles xmi:type="notation:PageStyle" xmi:id="_-iB97mccEeqiV90BpYf-_Q"/>
+    <styles xmi:type="notation:GuideStyle" xmi:id="_-iB972ccEeqiV90BpYf-_Q"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_-iB98GccEeqiV90BpYf-_Q"/>
+    <element xmi:type="ecore:EObject" href="#/0"/>
+    <edges xmi:type="notation:Edge" xmi:id="_-iB98WccEeqiV90BpYf-_Q" type="3001" source="_-iB9xmccEeqiV90BpYf-_Q" target="_-iB9zWccEeqiV90BpYf-_Q">
+      <children xmi:type="notation:Node" xmi:id="_-iB98mccEeqiV90BpYf-_Q" type="4009">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-iB982ccEeqiV90BpYf-_Q" y="40"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_-iB99GccEeqiV90BpYf-_Q"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-iB99WccEeqiV90BpYf-_Q"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_-iB99mccEeqiV90BpYf-_Q" lineColor="12560536"/>
+      <element xmi:type="ecore:EObject" href="#/0/@businessItems.2"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-iB992ccEeqiV90BpYf-_Q" points="[25, 2, -161, -13]$[211, 17, 25, 2]"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_-iB9-GccEeqiV90BpYf-_Q" type="3002" source="_-iB922ccEeqiV90BpYf-_Q" target="_-iB94mccEeqiV90BpYf-_Q">
+      <children xmi:type="notation:Node" xmi:id="_-iB9-WccEeqiV90BpYf-_Q" type="4013">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-iB9-mccEeqiV90BpYf-_Q" y="40"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_-iB9-2ccEeqiV90BpYf-_Q"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-iB9_GccEeqiV90BpYf-_Q"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_-iB9_WccEeqiV90BpYf-_Q" lineColor="0"/>
+      <element xmi:type="ecore:EObject" href="#/0/@businessItems.6"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-iB9_mccEeqiV90BpYf-_Q" points="[-25, -22, 28, 33]$[-78, -52, -25, 3]"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_-iB9_2ccEeqiV90BpYf-_Q" type="3003" source="_-iB9zWccEeqiV90BpYf-_Q" target="_-iB94mccEeqiV90BpYf-_Q">
+      <children xmi:type="notation:Node" xmi:id="_-iB-AGccEeqiV90BpYf-_Q" type="4014">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-iB-AWccEeqiV90BpYf-_Q" y="40"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_-iB-AmccEeqiV90BpYf-_Q"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-iB-A2ccEeqiV90BpYf-_Q"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_-iB-BGccEeqiV90BpYf-_Q" lineColor="12560536"/>
+      <element xmi:type="ecore:EObject" href="#/0/@businessItems.7"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-iB-BWccEeqiV90BpYf-_Q" points="[25, 3, -35, 3]$[35, 3, -25, 3]"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_-iB-BmccEeqiV90BpYf-_Q" type="3003" source="_-iB91GccEeqiV90BpYf-_Q" target="_-iB94mccEeqiV90BpYf-_Q">
+      <children xmi:type="notation:Node" xmi:id="_-iB-B2ccEeqiV90BpYf-_Q" type="4014">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-iB-CGccEeqiV90BpYf-_Q" y="40"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_-iB-CWccEeqiV90BpYf-_Q"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-iB-CmccEeqiV90BpYf-_Q"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_-iB-C2ccEeqiV90BpYf-_Q" lineColor="0"/>
+      <element xmi:type="ecore:EObject" href="#/0/@businessItems.8"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-iB-DGccEeqiV90BpYf-_Q" points="[-28, 20, 85, -66]$[-138, 86, -25, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-iB-DWccEeqiV90BpYf-_Q" id="(0.29411766,0.7802198)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_-iB-DmccEeqiV90BpYf-_Q" type="NoteAttachment" source="_-iB94mccEeqiV90BpYf-_Q" target="_-iB96WccEeqiV90BpYf-_Q">
+      <styles xmi:type="notation:ConnectorStyle" xmi:id="_-iB-D2ccEeqiV90BpYf-_Q" lineColor="0"/>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-iB-EGccEeqiV90BpYf-_Q" points="[-42, -34, 264, 213]$[-306, -247, 0, 0]"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>
