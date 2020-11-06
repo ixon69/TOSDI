@@ -28,6 +28,7 @@
     <module>jobs/process/durtoexcelandctalk_in_0.4</module>
     <module>jobs/process/reservation_inpatient_0.4</module>
     <module>jobs/process/first_depression_0.1</module>
+    <module>jobs/process/emergency_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TEST</talend.project.name>
