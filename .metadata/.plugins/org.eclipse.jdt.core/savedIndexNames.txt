@@ -1,0 +1,1 @@
+INDEX VERSION 1.131+D:\Programs\TOS_DI-Win32-20200219_1130-V7.3.1\workspace\.metadata\.plugins\org.eclipse.jdt.core

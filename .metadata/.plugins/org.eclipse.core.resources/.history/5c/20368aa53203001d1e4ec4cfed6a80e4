@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_uR1FkB-_Eeun-7hqiKFAkQ" id="_uRyCQB-_Eeun-7hqiKFAkQ" label="Emergency" description="응급의료센터 매일아침보고자료" version="0.9" statusCode="" item="_uR1Fkh-_Eeun-7hqiKFAkQ" displayName="Emergency">
+    <author href="../talend.project#_hfzRwWcpEeqGbd3Xq1BWjg"/>
+    <additionalProperties xmi:id="_uR4I4B-_Eeun-7hqiKFAkQ" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_uR4I4R-_Eeun-7hqiKFAkQ" key="created_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_uR4I4h-_Eeun-7hqiKFAkQ" key="created_date" value="2020-11-06T08:36:26.989+0900"/>
+    <additionalProperties xmi:id="_uR4I4x-_Eeun-7hqiKFAkQ" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_uR4I5B-_Eeun-7hqiKFAkQ" key="modified_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_uR4I5R-_Eeun-7hqiKFAkQ" key="modified_date" value="2022-07-14T13:55:48.725+0900"/>
+    <additionalProperties xmi:id="_mnRvIMXkEeynPrlKB3-88w" key="import_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_mnRvIcXkEeynPrlKB3-88w" key="import_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_mnRvIsXkEeynPrlKB3-88w" key="import_date" value="2022-04-27T13:43:35.681+0900"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_uR1FkR-_Eeun-7hqiKFAkQ" path="" locked="true" lockDate="2022-07-14T13:51:18.692+0900">
+    <locker href="../talend.project#_hfzRwWcpEeqGbd3Xq1BWjg"/>
+  </TalendProperties:ItemState>
+  <TalendProperties:ProcessItem xmi:id="_uR1Fkh-_Eeun-7hqiKFAkQ" property="_uR1FkB-_Eeun-7hqiKFAkQ" state="_uR1FkR-_Eeun-7hqiKFAkQ">
+    <process href="Emergency_0.9.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

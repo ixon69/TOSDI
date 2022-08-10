@@ -1,0 +1,3 @@
+TOS_Jobs_Records={"BUCHEON"\:{"projects"\:{"PROCESS"\:{"details"\:{"components"\:[{"component_name"\:"tOracleConnection","count"\:7},{"component_name"\:"tOracleInput","count"\:17},{"component_name"\:"tMap","count"\:13},{"component_name"\:"tFileOutputExcel","count"\:13},{"component_name"\:"tSystem","count"\:16},{"component_name"\:"tJavaRow","count"\:7},{"component_name"\:"tFileInputProperties","count"\:6},{"component_name"\:"tContextLoad","count"\:6},{"component_name"\:"tWaitForFile","count"\:1},{"component_name"\:"tMysqlConnection","count"\:3},{"component_name"\:"tMysqlInput","count"\:3},{"component_name"\:"tSendMail","count"\:2}],"nb.components"\:94,"nb.contextVars"\:18},"nb"\:11}},"type"\:"local"}}
+eclipse.preferences.version=1
+tos_count_job_exports=9

@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="infect_user" prompt="infect_user?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="infect_password" prompt="infect_password?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="infect_roomno" prompt="infect_roomno?" promptNeeded="false" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:nsOvrQpsE/2nJPNPaqHHplhRmjstJ9XEPdXS2Wze" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;D:/Programs/TOS_DI-Win32-20200219_1130-V7.3.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:QGVlNwC/xJc7s3692QVRUyhbI6gAFrclqfRaBqxa" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_pm9mIGcpEeqGbd3Xq1BWjg" name="DataOperation"/>
+    <routinesParameter id="_pnZrAGcpEeqGbd3Xq1BWjg" name="Mathematical"/>
+    <routinesParameter id="_pngYsGcpEeqGbd3Xq1BWjg" name="Numeric"/>
+    <routinesParameter id="_pnlRMGcpEeqGbd3Xq1BWjg" name="Relational"/>
+    <routinesParameter id="_pnyFgGcpEeqGbd3Xq1BWjg" name="StringHandling"/>
+    <routinesParameter id="_pohFUGcpEeqGbd3Xq1BWjg" name="TalendDataGenerator"/>
+    <routinesParameter id="_powV4GcpEeqGbd3Xq1BWjg" name="TalendDate"/>
+    <routinesParameter id="_po9xQGcpEeqGbd3Xq1BWjg" name="TalendString"/>
+    <routinesParameter id="_ppFtEGcpEeqGbd3Xq1BWjg" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tOracleConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_TNS_FILE" value="false"/>
+    <elementParameter field="FILE" name="TNS_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TNS_EDITOR" name="TNS_EDITOR" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;172.17.71.152&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;HIS014&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;mysql&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;DEVU02&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:CTeQLrlegzWfHgMsDC1EcdJC0O1LlGkjrVqVP2vaAIkWcdVR"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false" show="false"/>
+    <elementParameter field="FILE" name="SSL_TRUSTSERVER_TRUSTSTORE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" value="enc:system.encryption.key.v1:1uX3X1ACG1fwht98MCoILx4EAxeycg/75aPw33M9" show="false"/>
+    <elementParameter field="CHECK" name="NEED_CLIENT_AUTH" value="false" show="false"/>
+    <elementParameter field="FILE" name="SSL_KEYSTORE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:7JfuoQ80yoCtGz63p6XtxXSq/r3UPhf+9v6XVzY8" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_CBC_PROTECTION" value="true" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:thin:USER/MDP@server&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;172.17.71.152&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="Oracle" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;HIS014&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;DEVU02&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:OrMQXKxp7Kz8L9aL12l+DCU0QLckbBom12h3UC0fPKOs5Yg5" show="false"/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT '구분' AS GUBUN,&#xD;&#xA;       '예약일자' AS RSRVDD,&#xD;&#xA;       '진료과' AS ORDDEPTNM, --진료과&#xD;&#xA;       '진료의사' AS ORDDRNM,   --진료의사&#xD;&#xA;       '환자ID' AS PID,    --등록번호&#xD;&#xA;       '환자명' AS HNGNM,  --성명&#xD;&#xA;       '주민번호' AS RRGSTNO,   --주민번호&#xD;&#xA;       '연락처' AS HOMETEL,    -- 연락처&#xD;&#xA;       '휴대폰' AS MPPHONTEL,    -- 휴대폰&#xD;&#xA;       '접수일자' AS ACPTDD,    --접수일자&#xD;&#xA;       '진료일자' AS ORDDD,    --진료일자&#xD;&#xA;       '진료시간' AS ORDTM,    --시간&#xD;&#xA;       '예약구분' AS RSRVFLAG,  --예약구분&#xD;&#xA;       '초재진' AS FSEXAMFLAG,  --초재진&#xD;&#xA;       '처방코드' PRCPCD,   --처방코드&#xD;&#xA;       '처방명' PRCPNM,   --처방명칭&#xD;&#xA;       '시행부서' EXECDEPTNM,   --시행부서&#xD;&#xA;       '전송내역' AS REMFACT --전송내역&#xD;&#xA;  FROM DUAL&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT DISTINCT '진료예약' AS GUBUN,&#xD;&#xA;       A.ORDDD AS RSRVDD,&#xD;&#xA;       COM.FN_ZS_GETDEPTNAME(A.INSTCD, A.ORDDEPTCD, A.ORDDD) AS ORDDEPTNM, --진료과&#xD;&#xA;       COM.FN_ZS_GETUSERNM(A.ORDDRID,A.ORDDD) AS ORDDRNM,   --진료의사&#xD;&#xA;       A.PID AS PID,    --등록번호&#xD;&#xA;       HNGNM AS HNGNM,  --성명&#xD;&#xA;       E.RRGSTNO1 || SUBSTR(E.RRGSTNO2,0,1)||'******' AS RRGSTNO,   --주민번호&#xD;&#xA;       E.HOMETEL AS HOMETEL,    -- 연락처&#xD;&#xA;       E.MPPHONTEL AS MPPHONTEL,    -- 휴대폰&#xD;&#xA;       A.ORGORDDD AS ACPTDD,    --접수일자&#xD;&#xA;       A.ORDDD AS ORDDD,    --진료일자&#xD;&#xA;       A.ORDTM AS ORDTM,    --시간&#xD;&#xA;       (SELECT CDNM FROM COM.ZBCMCODE WHERE CDGRUPID = 'P0341' AND CDID = A.RSRVFLAG) AS RSRVFLAG,  --예약구분&#xD;&#xA;       (SELECT CDNM FROM COM.ZBCMCODE WHERE CDGRUPID = 'P0021' AND CDID = A.FSEXAMFLAG) AS FSEXAMFLAG,  --초재진&#xD;&#xA;       '' PRCPCD,   --처방코드&#xD;&#xA;       '' PRCPNM,   --처방명칭&#xD;&#xA;       '' EXECDEPTNM,   --시행부서&#xD;&#xA;       (SELECT Y.TMP31 FROM PAM.SERVICECOOP Y WHERE Y.TMP01 = 'ZIKA' AND Y.TMP02 = E.RRGSTNO1 AND Y.TMP03 = E.RRGSTNO2 AND Y.TMP11 = 'Y' AND ROWNUM =1 ) AS REMFACT --전송내역&#xD;&#xA;  FROM PAM.PMOHOTPT A, PAM.PMCMPTBS E&#xD;&#xA; WHERE A.INSTCD = NVL( '014', '014')&#xD;&#xA;   AND A.ORDDD BETWEEN TO_CHAR(SYSDATE + 0.5, 'YYYYMMDD') AND (SELECT MIN(BASEDD) FROM PAM.PMBMHSCH WHERE BASEDD > TO_CHAR(SYSDATE - 0.5, 'YYYYMMDD') AND HISTSTAT = 'Y' AND DUTFLAG = '0')&#xD;&#xA;   AND A.HISTSTAT IN ( 'R', 'T' )&#xD;&#xA;   AND A.ORDTYPE = 'O'&#xD;&#xA;--   AND (A.INSUKIND IN ('11', '21', '22') OR (A.INSUKIND = '51' AND RSRVFLAG = '5'))&#xD;&#xA;   AND A.PID = E.PID&#xD;&#xA;   AND A.INSTCD = E.INSTCD&#xD;&#xA;   AND EXISTS &#xD;&#xA;      (SELECT Y.TMP04&#xD;&#xA;         FROM PAM.SERVICECOOP Y&#xD;&#xA;        WHERE Y.TMP01 = 'ZIKA'&#xD;&#xA;          AND Y.TMP11 = 'Y'&#xD;&#xA;          AND Y.TMP02 = E.RRGSTNO1&#xD;&#xA;          AND Y.TMP03 = E.RRGSTNO2&#xD;&#xA;          AND Y.TMP10 = E.PID)&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT DISTINCT '진료예약' AS GUBUN,&#xD;&#xA;       A.ORDDD AS RSRVDD,&#xD;&#xA;       COM.FN_ZS_GETDEPTNAME(A.INSTCD, A.ORDDEPTCD, A.ORDDD) AS ORDDEPTNM, --진료과&#xD;&#xA;       COM.FN_ZS_GETUSERNM(A.ORDDRID,A.ORDDD) AS ORDDRNM,   --진료의사&#xD;&#xA;       A.PID AS PID,    --등록번호&#xD;&#xA;       HNGNM AS HNGNM,  --성명&#xD;&#xA;       E.RRGSTNO1 || SUBSTR(E.RRGSTNO2,0,1)||'******' AS RRGSTNO,   --주민번호&#xD;&#xA;       E.HOMETEL AS HOMETEL,    -- 연락처&#xD;&#xA;       E.MPPHONTEL AS MPPHONTEL,    -- 휴대폰&#xD;&#xA;       A.ORGORDDD AS ACPTDD,    --접수일자&#xD;&#xA;       A.ORDDD AS ORDDD,    --진료일자&#xD;&#xA;       A.ORDTM AS ORDTM,    --시간&#xD;&#xA;       (SELECT CDNM FROM COM.ZBCMCODE WHERE CDGRUPID = 'P0341' AND CDID = A.RSRVFLAG) AS RSRVFLAG,  --예약구분&#xD;&#xA;       (SELECT CDNM FROM COM.ZBCMCODE WHERE CDGRUPID = 'P0021' AND CDID = A.FSEXAMFLAG) AS FSEXAMFLAG,  --초재진&#xD;&#xA;       '' PRCPCD,   --처방코드&#xD;&#xA;       '' PRCPNM,   --처방명칭&#xD;&#xA;       '' EXECDEPTNM,   --시행부서&#xD;&#xA;       (SELECT Y.TMP31 FROM PAM.SERVICECOOP Y WHERE Y.TMP01 = 'ZIKA' AND Y.TMP02 = E.RRGSTNO1 AND Y.TMP03 = E.RRGSTNO2 AND Y.TMP11 = 'Y' AND ROWNUM =1 ) AS REMFACT --전송내역&#xD;&#xA;  FROM PAM.PMOHOTPT A, PAM.PMCMPTBS E, PAM.PMCHSCND B&#xD;&#xA; WHERE A.INSTCD = NVL( '014', '014')&#xD;&#xA;   AND A.ORDDD BETWEEN TO_CHAR(SYSDATE + 0.5, 'YYYYMMDD') AND (SELECT MIN(BASEDD) FROM PAM.PMBMHSCH WHERE BASEDD > TO_CHAR(SYSDATE - 0.5, 'YYYYMMDD') AND HISTSTAT = 'Y' AND DUTFLAG = '0')&#xD;&#xA;   AND A.HISTSTAT IN ( 'R', 'T' )&#xD;&#xA;   AND A.ORDTYPE = 'O'&#xD;&#xA;--   AND (A.INSUKIND IN ('11', '21', '22') OR (A.INSUKIND = '51' AND RSRVFLAG = '5'))&#xD;&#xA;   AND A.PID = E.PID&#xD;&#xA;   AND A.INSTCD = E.INSTCD&#xD;&#xA;   AND B.INSTCD = E.INSTCD&#xD;&#xA;   AND B.RRGSTNO1 = E.RRGSTNO1&#xD;&#xA;   AND B.RRGSTNO2 = E.RRGSTNO2&#xD;&#xA;   AND A.ORDDD BETWEEN B.FROMDD AND B.TODD&#xD;&#xA;   AND EXISTS &#xD;&#xA;       (SELECT Y.TMP04&#xD;&#xA;          FROM PAM.SERVICECOOP Y&#xD;&#xA;         WHERE Y.TMP01 = 'ZIKA'&#xD;&#xA;           AND Y.TMP11 = 'Y'&#xD;&#xA;           AND Y.TMP02 = E.RRGSTNO1&#xD;&#xA;           AND Y.TMP03 = E.RRGSTNO2&#xD;&#xA;           AND Y.TMP10 = E.PID)&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT DISTINCT '진료예약' AS GUBUN,&#xD;&#xA;       A.ORDDD AS RSRVDD,&#xD;&#xA;       COM.FN_ZS_GETDEPTNAME(A.INSTCD, A.ORDDEPTCD, A.ORDDD) AS ORDDEPTNM, --진료과&#xD;&#xA;       COM.FN_ZS_GETUSERNM(A.ORDDRID,A.ORDDD) AS ORDDRNM,   --진료의사&#xD;&#xA;       A.PID AS PID,    --등록번호&#xD;&#xA;       HNGNM AS HNGNM,  --성명&#xD;&#xA;       E.RRGSTNO1 || SUBSTR(E.RRGSTNO2,0,1)||'******' AS RRGSTNO,   --주민번호&#xD;&#xA;       E.HOMETEL AS HOMETEL,    -- 연락처&#xD;&#xA;       E.MPPHONTEL AS MPPHONTEL,    -- 휴대폰&#xD;&#xA;       A.ORGORDDD AS ACPTDD,    --접수일자&#xD;&#xA;       A.ORDDD AS ORDDD,    --진료일자&#xD;&#xA;       A.ORDTM AS ORDTM,    --시간&#xD;&#xA;       (SELECT CDNM FROM COM.ZBCMCODE WHERE CDGRUPID = 'P0341' AND CDID = A.RSRVFLAG) AS RSRVFLAG,  --예약구분&#xD;&#xA;       (SELECT CDNM FROM COM.ZBCMCODE WHERE CDGRUPID = 'P0021' AND CDID = A.FSEXAMFLAG) AS FSEXAMFLAG,  --초재진&#xD;&#xA;       '' PRCPCD,   --처방코드&#xD;&#xA;       '' PRCPNM,   --처방명칭&#xD;&#xA;       '' EXECDEPTNM,   --시행부서&#xD;&#xA;       (SELECT Y.TMP31 FROM PAM.SERVICECOOP Y WHERE Y.TMP01 = 'ZIKA' AND Y.TMP02 = E.RRGSTNO1 AND Y.TMP03 = E.RRGSTNO2 AND Y.TMP11 = 'Y' AND ROWNUM =1 ) AS REMFACT --전송내역&#xD;&#xA;  FROM PAM.PMOHOTPT A, PAM.PMCMPTBS E, PAM.PMCHRARE B&#xD;&#xA; WHERE A.INSTCD = NVL( '014', '014')&#xD;&#xA;   AND A.ORDDD BETWEEN TO_CHAR(SYSDATE + 0.5, 'YYYYMMDD') AND (SELECT MIN(BASEDD) FROM PAM.PMBMHSCH WHERE BASEDD > TO_CHAR(SYSDATE - 0.5, 'YYYYMMDD') AND HISTSTAT = 'Y' AND DUTFLAG = '0')&#xD;&#xA;   AND A.HISTSTAT IN ( 'R', 'T' )&#xD;&#xA;   AND A.ORDTYPE = 'O'&#xD;&#xA;--   AND (A.INSUKIND IN ('11', '21', '22') OR (A.INSUKIND = '51' AND RSRVFLAG = '5'))&#xD;&#xA;   AND A.PID = E.PID&#xD;&#xA;   AND A.INSTCD = E.INSTCD&#xD;&#xA;   AND B.INSTCD = E.INSTCD&#xD;&#xA;   AND B.RRGSTNO1 = E.RRGSTNO1&#xD;&#xA;   AND B.RRGSTNO2 = E.RRGSTNO2&#xD;&#xA;   AND A.ORDDD BETWEEN B.FROMDD AND B.TODD&#xD;&#xA;   AND EXISTS &#xD;&#xA;       (SELECT Y.TMP04&#xD;&#xA;          FROM PAM.SERVICECOOP Y&#xD;&#xA;         WHERE Y.TMP01 = 'ZIKA'&#xD;&#xA;           AND Y.TMP11 = 'Y'&#xD;&#xA;           AND Y.TMP02 = E.RRGSTNO1&#xD;&#xA;           AND Y.TMP03 = E.RRGSTNO2&#xD;&#xA;           AND Y.TMP10 = E.PID)&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT /*+ LEADING(EXOP OTPT OPRC) INDEX_SS(EXOP IX_MMODEXOP_09) */&#xD;&#xA;       DISTINCT '검사예약' AS GUBUN,&#xD;&#xA;       EXOP.RSRVDD,&#xD;&#xA;       COM.FN_ZS_GETDEPTNAME(OTPT.INSTCD, OTPT.ORDDEPTCD, OTPT.ORDDD) AS ORDDEPTNM, --진료과&#xD;&#xA;       COM.FN_ZS_GETUSERNM(OTPT.ORDDRID, OTPT.ORDDD) AS ORDDRNM,   --진료의사&#xD;&#xA;       OTPT.PID AS PID,    --등록번호&#xD;&#xA;       PTBS.HNGNM,  --성명&#xD;&#xA;       PTBS.RRGSTNO1 || SUBSTR(PTBS.RRGSTNO2,0,1)||'******' AS RRGSTNO,   --주민번호&#xD;&#xA;       PTBS.HOMETEL AS HOMETEL,    -- 연락처&#xD;&#xA;       PTBS.MPPHONTEL AS MPPHONTEL,    -- 휴대폰&#xD;&#xA;       OTPT.ORGORDDD AS ACPTDD,    --접수일자&#xD;&#xA;       OTPT.ORDDD AS ORDDD,    --진료일자&#xD;&#xA;       OTPT.ORDTM AS ORDTM,    --시간&#xD;&#xA;       (SELECT CDNM FROM COM.ZBCMCODE WHERE CDGRUPID = 'P0341' AND CDID = OTPT.RSRVFLAG) AS RSRVFLAG,  --예약구분&#xD;&#xA;       (SELECT CDNM FROM COM.ZBCMCODE WHERE CDGRUPID = 'P0021' AND CDID = OTPT.FSEXAMFLAG) AS FSEXAMFLAG,  --초재진&#xD;&#xA;       OPRC.PRCPCD,   --처방코드&#xD;&#xA;       OPRC.PRCPNM,   --처방명칭&#xD;&#xA;       COM.FN_ZS_GETDEPTNAME(OTPT.INSTCD, EXOP.EXECDEPTCD,OTPT.ORDDD) EXECDEPTNM,   --시행부서&#xD;&#xA;       (SELECT Y.TMP31 FROM PAM.SERVICECOOP Y WHERE Y.TMP01 = 'ZIKA' AND Y.TMP02 = PTBS.RRGSTNO1 AND Y.TMP03 = PTBS.RRGSTNO2 AND Y.TMP11 = 'Y' AND ROWNUM = 1) AS REMFACT --전송내역&#xD;&#xA;  FROM EMR.MMODEXOP EXOP, EMR.MMOHOPRC OPRC, PAM.PMOHOTPT OTPT, PAM.PMCMPTBS PTBS&#xD;&#xA; WHERE OTPT.INSTCD = NVL( '014', '014')&#xD;&#xA;   AND OTPT.HISTSTAT IN ('R','T')&#xD;&#xA;--   AND OTPT.INSUKIND IN ('11','21','22')&#xD;&#xA;   AND OTPT.ORDDD BETWEEN TO_CHAR(ADD_MONTHS(TO_DATE( '20200623','YYYYMMDD'), -36),'YYYYMMDD') AND '20200623' --3년데이터&#xD;&#xA;   AND OTPT.ORDTYPE != 'S'&#xD;&#xA;   AND OTPT.INSTCD = PTBS.INSTCD&#xD;&#xA;   AND OTPT.PID = PTBS.PID&#xD;&#xA;   AND OTPT.INSTCD = EXOP.INSTCD&#xD;&#xA;   AND OTPT.PID = EXOP.PID&#xD;&#xA;   AND OTPT.CRETNO = EXOP.ACTCRETNO&#xD;&#xA;   AND OTPT.ORDDD = EXOP.ACTORDDD&#xD;&#xA;   AND EXOP.INSTCD = OPRC.INSTCD&#xD;&#xA;   AND EXOP.PID = OPRC.PID&#xD;&#xA;   AND EXOP.PRCPDD = OPRC.PRCPDD&#xD;&#xA;   AND EXOP.PRCPNO = OPRC.PRCPNO&#xD;&#xA;   AND EXOP.EXECPRCPHISTCD = OPRC.PRCPHISTCD&#xD;&#xA;   AND OPRC.PRCPHISTCD = 'O'&#xD;&#xA;   AND EXOP.EXECPRCPHISTCD = 'O'&#xD;&#xA;   AND EXOP.RSRVFLAG = 'Y' --예약검사여부&#xD;&#xA;   AND EXOP.EXECDD = '00000000' --실시여부&#xD;&#xA;   AND EXOP.RSRVDD BETWEEN TO_CHAR(SYSDATE + 0.5, 'YYYYMMDD') AND (SELECT MIN(BASEDD) FROM PAM.PMBMHSCH WHERE BASEDD > TO_CHAR(SYSDATE - 0.5, 'YYYYMMDD') AND HISTSTAT = 'Y' AND DUTFLAG = '0')&#xD;&#xA;   AND EXISTS&#xD;&#xA;       (SELECT Y.TMP04&#xD;&#xA;          FROM PAM.SERVICECOOP Y&#xD;&#xA;         WHERE Y.TMP01 = 'ZIKA'&#xD;&#xA;           AND Y.TMP11 = 'Y'&#xD;&#xA;           AND Y.TMP02 = PTBS.RRGSTNO1&#xD;&#xA;           AND Y.TMP03 = PTBS.RRGSTNO2&#xD;&#xA;           AND Y.TMP10 = PTBS.PID)&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT DISTINCT '검사예약' AS GUBUN,&#xD;&#xA;       A.EXECDD AS RSRVDD,&#xD;&#xA;       COM.FN_ZS_GETDEPTNAME(A.INSTCD, A.ORDDEPTCD, A.ORDDD) AS ORDDEPTNM, --진료과&#xD;&#xA;       COM.FN_ZS_GETUSERNM(A.ORDDRID, A.ORDDD) AS ORDDRNM,   --진료의사&#xD;&#xA;       A.PID AS PID,    --등록번호&#xD;&#xA;       B.HNGNM,  --성명&#xD;&#xA;       B.RRGSTNO1 || SUBSTR(B.RRGSTNO2,0,1)||'******' AS RRGSTNO,   --주민번호&#xD;&#xA;       B.HOMETEL AS HOMETEL,    -- 연락처&#xD;&#xA;       B.MPPHONTEL AS MPPHONTEL,    -- 휴대폰&#xD;&#xA;       '' AS ACPTDD,    --접수일자&#xD;&#xA;       A.ORDDD AS ORDDD,    --진료일자&#xD;&#xA;       '' AS ORDTM,    --시간&#xD;&#xA;       '' AS RSRVFLAG,  --예약구분&#xD;&#xA;       '' AS FSEXAMFLAG,  --초재진&#xD;&#xA;       '' AS PRCPCD,   --처방코드&#xD;&#xA;       '' AS PRCPNM,   --처방명칭&#xD;&#xA;       '' AS EXECDEPTNM,   --시행부서&#xD;&#xA;       (SELECT Y.TMP31 FROM PAM.SERVICECOOP Y WHERE Y.TMP01 = 'ZIKA' AND Y.TMP02 = B.RRGSTNO1 AND Y.TMP03 = B.RRGSTNO2 AND Y.TMP11 = 'Y' AND ROWNUM =1) AS REMFACT --전송내역&#xD;&#xA;  FROM PAM.PAOHOSCL A, PAM.PMCMPTBS B&#xD;&#xA; WHERE A.INSTCD = NVL( '014', '014')&#xD;&#xA;   AND A.EXECDD BETWEEN TO_CHAR(SYSDATE + 0.5, 'YYYYMMDD') AND (SELECT MIN(BASEDD) FROM PAM.PMBMHSCH WHERE BASEDD > TO_CHAR(SYSDATE - 0.5, 'YYYYMMDD') AND HISTSTAT = 'Y' AND DUTFLAG = '0')&#xD;&#xA;   AND A.ORDTYPE != 'S'&#xD;&#xA;   AND A.CALCSTAT = 'Y'&#xD;&#xA;--   AND A.INSUKIND = '11'&#xD;&#xA;   AND A.SUPPKIND != '01'&#xD;&#xA;   AND A.INSTCD = B.INSTCD&#xD;&#xA;   AND A.PID = B.PID&#xD;&#xA;   AND A.RCPTDD BETWEEN TO_CHAR(ADD_MONTHS(TO_DATE( '20200623', 'YYYYMMDD')-1, -12), 'YYYYMMDD') AND '20200623'-1&#xD;&#xA;   AND A.ORDDD BETWEEN TO_CHAR(ADD_MONTHS(TO_DATE( '20200623', 'YYYYMMDD')-1, -12), 'YYYYMMDD') AND '20200623'-1&#xD;&#xA;   AND EXISTS&#xD;&#xA;       (SELECT Y.TMP04&#xD;&#xA;          FROM PAM.SERVICECOOP Y&#xD;&#xA;         WHERE Y.TMP01 = 'ZIKA'&#xD;&#xA;           AND Y.TMP11 = 'Y'&#xD;&#xA;           AND Y.TMP02 = B.RRGSTNO1&#xD;&#xA;           AND Y.TMP03 = B.RRGSTNO2&#xD;&#xA;           AND Y.TMP10 = B.PID)&#xD;&#xA; GROUP BY A.PID, A.ORDDD, A.CRETNO, A.INSTCD, A.ORDTYPE, EXECDD, RRGSTNO1||RRGSTNO2, HNGNM, A.ORDDEPTCD, A.SUPPKIND, A.INSUKIND, A.ORDDRID, B.RRGSTNO1, B.RRGSTNO2, B.HOMETEL, B.MPPHONTEL&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT 'DSC예약' AS GUBUN,&#xD;&#xA;       A.INDD AS RSRVDD,&#xD;&#xA;       COM.FN_ZS_GETDEPTNAME(A.INSTCD, A.ORDDEPTCD, A.INDD) AS ORDDEPTNM, --진료과&#xD;&#xA;       COM.FN_ZS_GETUSERNM(A.MEDISPCLID, A.INDD) AS ORDDRNM,   --진료의사&#xD;&#xA;       A.PID AS PID,    --등록번호&#xD;&#xA;       E.HNGNM,  --성명&#xD;&#xA;       E.RRGSTNO1 || SUBSTR(E.RRGSTNO2,0,1)||'******' AS RRGSTNO,   --주민번호&#xD;&#xA;       E.HOMETEL AS HOMETEL,    -- 연락처&#xD;&#xA;       E.MPPHONTEL AS MPPHONTEL,    -- 휴대폰&#xD;&#xA;       A.INDD AS ACPTDD,    --접수일자&#xD;&#xA;       A.INDD AS ORDDD,    --진료일자&#xD;&#xA;       A.INTM AS ORDTM,    --시간&#xD;&#xA;       '' AS RSRVFLAG,  --예약구분&#xD;&#xA;       '' AS FSEXAMFLAG,  --초재진&#xD;&#xA;       '' AS PRCPCD,   --처방코드&#xD;&#xA;       '' AS PRCPNM,   --처방명칭&#xD;&#xA;       '' AS EXECDEPTNM,   --시행부서&#xD;&#xA;       (SELECT Y.TMP31 FROM PAM.SERVICECOOP Y WHERE Y.TMP01 = 'ZIKA' AND Y.TMP02 = E.RRGSTNO1 AND Y.TMP03 = E.RRGSTNO2 AND Y.TMP11 = 'Y' AND ROWNUM =1 ) AS REMFACT --전송내역&#xD;&#xA;   FROM PAM.PMIHINPT A, PAM.PMCMPTBS E&#xD;&#xA; WHERE A.INSTCD = NVL( '014', '014')&#xD;&#xA;   AND A.INDD BETWEEN TO_CHAR(SYSDATE + 0.5, 'YYYYMMDD') AND (SELECT MIN(BASEDD) FROM PAM.PMBMHSCH WHERE BASEDD > TO_CHAR(SYSDATE - 0.5, 'YYYYMMDD') AND HISTSTAT = 'Y' AND DUTFLAG = '0')&#xD;&#xA;   AND A.HISTSTAT = 'Y'&#xD;&#xA;   AND A.ORDTYPE = 'D'&#xD;&#xA;   AND A.DSCHDD = '99991231'&#xD;&#xA;   AND A.CALCDD = '00000000' --입실체크 안된내역만.&#xD;&#xA;   AND A.CALCTM = '0000'&#xD;&#xA;--   AND (A.INSUKIND IN ('11', '21', '22') OR (A.INSUKIND = '51'))&#xD;&#xA;   AND A.PID = E.PID&#xD;&#xA;   AND A.INSTCD = E.INSTCD&#xD;&#xA;   AND EXISTS &#xD;&#xA;       (SELECT Y.TMP04&#xD;&#xA;          FROM PAM.SERVICECOOP Y&#xD;&#xA;         WHERE Y.TMP01 = 'ZIKA'&#xD;&#xA;           AND Y.TMP11 = 'Y'&#xD;&#xA;           AND Y.TMP02 = E.RRGSTNO1&#xD;&#xA;           AND Y.TMP03 = E.RRGSTNO2&#xD;&#xA;           AND Y.TMP10 = E.PID)&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT DISTINCT '입원예약' AS GUGUN,&#xD;&#xA;       A.PATINHOPEDD AS RSRVDD,&#xD;&#xA;       COM.FN_ZS_GETDEPTNAME(A.INSTCD, A.ORDDEPTCD, A.PATINHOPEDD) AS ORDDEPTNM, --진료과&#xD;&#xA;       COM.FN_ZS_GETUSERNM(A.ORDDRID, A.INDIRECDD) AS ORDDRNM,   --진료의사&#xD;&#xA;       A.PID AS PID,    --등록번호&#xD;&#xA;       E.HNGNM,  --성명&#xD;&#xA;       E.RRGSTNO1 || SUBSTR(E.RRGSTNO2,0,1)||'******' AS RRGSTNO,   --주민번호&#xD;&#xA;       E.HOMETEL AS HOMETEL,    -- 연락처&#xD;&#xA;       E.MPPHONTEL AS MPPHONTEL,    -- 휴대폰&#xD;&#xA;       '' AS ACPTDD,    --접수일자&#xD;&#xA;       A.PATINHOPEDD AS ORDDD,    --진료일자&#xD;&#xA;       '' AS ORDTM,    --시간&#xD;&#xA;       '' AS RSRVFLAG,  --예약구분&#xD;&#xA;       '' AS FSEXAMFLAG,  --초재진&#xD;&#xA;       '' AS PRCPCD,   --처방코드&#xD;&#xA;       '' AS PRCPNM,   --처방명칭&#xD;&#xA;       '' AS EXECDEPTNM,   --시행부서&#xD;&#xA;       (SELECT Y.TMP31 FROM PAM.SERVICECOOP Y WHERE Y.TMP01 = 'ZIKA' AND Y.TMP02 = E.RRGSTNO1 AND Y.TMP03 = E.RRGSTNO2 AND Y.TMP11 = 'Y' AND ROWNUM =1 ) AS REMFACT --전송내역&#xD;&#xA;  FROM PAM.PMIHADRV A, PAM.PMCMPTBS B, PAM.PMIHINPT C, PAM.PMCMPTBS E&#xD;&#xA; WHERE A.PID = B.PID&#xD;&#xA;   AND A.INSTCD = B.INSTCD&#xD;&#xA;   AND A.INSTCD = '014'&#xD;&#xA;   AND A.INSTCD = E.INSTCD&#xD;&#xA;   AND A.PID = E.PID&#xD;&#xA;   AND C.INSTCD(+) = A.INSTCD&#xD;&#xA;   AND C.PID(+) = A.PID&#xD;&#xA;   AND C.HISTSTAT(+) = 'Y'&#xD;&#xA;   AND C.INDSCHACPTSTAT(+) = 'A'&#xD;&#xA;   AND C.DSCHDD(+) = '99991231'&#xD;&#xA;   AND C.ORDTYPE(+) = 'I'&#xD;&#xA;   AND A.INRSRVSTAT IN ('S','R')&#xD;&#xA;   AND A.INFLAG = 'G'&#xD;&#xA;   AND A.ERREGLYN IN ('I','F','R','G','D')&#xD;&#xA;   AND A.PATINHOPEDD BETWEEN TO_CHAR(SYSDATE + 0.5, 'YYYYMMDD') AND (SELECT MIN(BASEDD) FROM PAM.PMBMHSCH WHERE BASEDD > TO_CHAR(SYSDATE - 0.5, 'YYYYMMDD') AND HISTSTAT = 'Y' AND DUTFLAG = '0')&#xD;&#xA;   AND EXISTS&#xD;&#xA;       (SELECT Y.TMP04&#xD;&#xA;          FROM PAM.SERVICECOOP Y&#xD;&#xA;         WHERE Y.TMP01 = 'ZIKA'&#xD;&#xA;           AND Y.TMP11 = 'Y'&#xD;&#xA;           AND Y.TMP02 = E.RRGSTNO1&#xD;&#xA;           AND Y.TMP03 = E.RRGSTNO2&#xD;&#xA;           AND Y.TMP10 = E.PID)&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT '건진예약' AS GUBUN,&#xD;&#xA;       TO_CHAR(ACPT.ACPT_DD, 'YYYYMMDD') AS RSRVDD,&#xD;&#xA;       COM.FN_ZS_GETDEPTNAME(ACPT.INST_CD, ACPT.PRCP_DEPT_CD, TO_CHAR(OTPT.OPD_MEDTRT_DD, 'YYYYMMDD')) AS ORDDEPTNM, --진료과&#xD;&#xA;       COM.FN_ZS_GETUSERNM(ACPT.PRCP_DR_ID,TO_CHAR(ACPT.ACPT_DD, 'YYYYMMDD')) AS ORDDRNM,   --진료의사&#xD;&#xA;       ACPT.PID AS PID,    --등록번호&#xD;&#xA;       PATM.CLNT_NM AS HNGNM,  --성명&#xD;&#xA;       PATM.RES_NO1 || SUBSTR(PATM.RES_NO2,0,1)||'******' AS RRGSTNO,   --주민번호&#xD;&#xA;       PATM.GNRL_TEL_NO AS HOMETEL,    -- 연락처&#xD;&#xA;       PATM.MPPHON_NO AS MPPHONTEL,    -- 휴대폰&#xD;&#xA;       TO_CHAR(ACPT.ACPT_DD, 'YYYYMMDD') AS ACPTDD,    --접수일자&#xD;&#xA;       TO_CHAR(OTPT.OPD_MEDTRT_DD, 'YYYYMMDD') AS ORDDD,    --진료일자&#xD;&#xA;       OTPT.OPD_MEDTRT_TM AS ORDTM,    --시간&#xD;&#xA;       (SELECT CD_VAL_NM FROM HC.HCBMCODE WHERE GRUP_CD_ID = 'A0119' AND CD_VAL = ACPT.RSRV_FLAG) AS RSRVFLAG,  --예약구분&#xD;&#xA;       (CASE WHEN ACPT.RMDEM_YN = 'Y' THEN '재진' ELSE '초진' END) AS FSEXAMFLAG,  --초재진&#xD;&#xA;       '' AS PRCPCD,   --처방코드&#xD;&#xA;       '' AS PRCPNM,   --처방명칭&#xD;&#xA;       '' AS EXECDEPTNM,   --시행부서&#xD;&#xA;       (SELECT Y.TMP31 FROM PAM.SERVICECOOP Y WHERE Y.TMP01 = 'ZIKA' AND Y.TMP02 = PATM.RES_NO1 AND Y.TMP03 = PATM.RES_NO2 AND Y.TMP11 = 'Y' AND ROWNUM = 1) AS REMFACT --전송내역&#xD;&#xA;  FROM HC.HCAMACPT ACPT, HC.HCAMPATM PATM, HC.HCADOTPT OTPT&#xD;&#xA; WHERE ACPT.INST_CD = NVL( '014', '014')&#xD;&#xA;   AND ACPT.ACPT_DD BETWEEN TO_CHAR(SYSDATE + 0.5, 'YYYYMMDD') AND (SELECT MIN(BASEDD) FROM PAM.PMBMHSCH WHERE BASEDD > TO_CHAR(SYSDATE - 0.5, 'YYYYMMDD') AND HISTSTAT = 'Y' AND DUTFLAG = '0')&#xD;&#xA;   AND ACPT.INST_CD = PATM.INST_CD&#xD;&#xA;   AND ACPT.PID = PATM.PID&#xD;&#xA;   AND EXISTS &#xD;&#xA;       (SELECT Y.TMP04&#xD;&#xA;          FROM PAM.SERVICECOOP Y&#xD;&#xA;         WHERE Y.TMP01 = 'ZIKA'&#xD;&#xA;           AND Y.TMP11 = 'Y'&#xD;&#xA;           AND Y.TMP02 = PATM.RES_NO1&#xD;&#xA;           AND Y.TMP03 = PATM.RES_NO2&#xD;&#xA;           AND Y.TMP10 = PATM.PID)&#xD;&#xA;   AND ACPT.HC_STAT IN ('C')--A 가예약, B 가예약취소, C 예약, D 예약취소, E 접수, F 접수취소, G 결과, H 판정대기, I 판정완료&#xD;&#xA;   AND ACPT.INST_CD = OTPT.INST_CD&#xD;&#xA;   AND ACPT.HC_ACPT_SEQ_NO = OTPT.HC_ACPT_SEQ_NO&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT '건진예약' AS GUBUN,&#xD;&#xA;       TO_CHAR(RCNT.RSLT_CNST_DD, 'YYYYMMDD') AS RSRVDD,&#xD;&#xA;       COM.FN_ZS_GETDEPTNAME(ACPT.INST_CD, ACPT.PRCP_DEPT_CD, TO_CHAR(OTPT.OPD_MEDTRT_DD, 'YYYYMMDD')) AS ORDDEPTNM, --진료과&#xD;&#xA;       COM.FN_ZS_GETUSERNM(ACPT.PRCP_DR_ID,TO_CHAR(ACPT.ACPT_DD, 'YYYYMMDD')) AS ORDDRNM,   --진료의사&#xD;&#xA;       ACPT.PID AS PID,    --등록번호&#xD;&#xA;       PATM.CLNT_NM AS HNGNM,  --성명&#xD;&#xA;       PATM.RES_NO1 || SUBSTR(PATM.RES_NO2,0,1)||'******' AS RRGSTNO,   --주민번호&#xD;&#xA;       PATM.GNRL_TEL_NO AS HOMETEL,    -- 연락처&#xD;&#xA;       PATM.MPPHON_NO AS MPPHONTEL,    -- 휴대폰&#xD;&#xA;       TO_CHAR(ACPT.ACPT_DD, 'YYYYMMDD') AS ACPTDD,    --접수일자&#xD;&#xA;       TO_CHAR(OTPT.OPD_MEDTRT_DD, 'YYYYMMDD') AS ORDDD,    --진료일자&#xD;&#xA;       OTPT.OPD_MEDTRT_TM AS ORDTM,    --시간&#xD;&#xA;       (SELECT CD_VAL_NM FROM HC.HCBMCODE WHERE GRUP_CD_ID = 'A0119' AND CD_VAL = ACPT.RSRV_FLAG) AS RSRVFLAG,  --예약구분&#xD;&#xA;       '상담' AS FSEXAMFLAG,  --초재진&#xD;&#xA;       '' AS PRCPCD,   --처방코드&#xD;&#xA;       '' AS PRCPNM,   --처방명칭&#xD;&#xA;       '' AS EXECDEPTNM,   --시행부서&#xD;&#xA;       (SELECT Y.TMP31 FROM PAM.SERVICECOOP Y WHERE Y.TMP01 = 'ZIKA' AND Y.TMP02 = PATM.RES_NO1 AND Y.TMP03 = PATM.RES_NO2 AND Y.TMP11 = 'Y' AND ROWNUM = 1) AS REMFACT --전송내역&#xD;&#xA;  FROM HC.HCAMRCNT RCNT, HC.HCAMACPT ACPT, HC.HCAMPATM PATM, HC.HCADOTPT OTPT&#xD;&#xA; WHERE RCNT.INST_CD = NVL( '014', '014')&#xD;&#xA;   AND RCNT.RSLT_CNST_DD BETWEEN TO_CHAR(SYSDATE + 0.5, 'YYYYMMDD') AND (SELECT MIN(BASEDD) FROM PAM.PMBMHSCH WHERE BASEDD > TO_CHAR(SYSDATE - 0.5, 'YYYYMMDD') AND HISTSTAT = 'Y' AND DUTFLAG = '0')&#xD;&#xA;   AND RCNT.RSLT_CNST_VALI_CNST_CD = 'O'&#xD;&#xA;   AND EXISTS &#xD;&#xA;       (SELECT 1&#xD;&#xA;          FROM HC.HCBMCODE SUB&#xD;&#xA;         WHERE SUB.INST_CD = RCNT.INST_CD&#xD;&#xA;           AND SUB.GRUP_CD_ID = 'A0003'&#xD;&#xA;           AND SUB.CD_VAL_NM LIKE '%내원%'&#xD;&#xA;           AND SUB.USE_YN = 'Y'&#xD;&#xA;           AND RCNT.RSLT_CNST_DD BETWEEN SUB.USE_FRDD AND SUB.USE_TODD&#xD;&#xA;           AND SUB.CD_VAL = RCNT.RSLT_CNST_FLAG)&#xD;&#xA;   AND RCNT.INST_CD = ACPT.INST_CD&#xD;&#xA;   AND RCNT.HC_ACPT_SEQ_NO = ACPT.HC_ACPT_SEQ_NO&#xD;&#xA;   AND ACPT.INST_CD = PATM.INST_CD&#xD;&#xA;   AND ACPT.PID = PATM.PID&#xD;&#xA;   AND EXISTS&#xD;&#xA;       (SELECT Y.TMP04&#xD;&#xA;          FROM PAM.SERVICECOOP Y&#xD;&#xA;         WHERE Y.TMP01 = 'ZIKA'&#xD;&#xA;           AND Y.TMP11 = 'Y'&#xD;&#xA;           AND Y.TMP02 = PATM.RES_NO1&#xD;&#xA;           AND Y.TMP03 = PATM.RES_NO2&#xD;&#xA;           AND Y.TMP10 = PATM.PID)&#xD;&#xA;   AND ACPT.HC_STAT NOT IN ('B','D','F')--A 가예약, B 가예약취소, C 예약, D 예약취소, E 접수, F 접수취소, G 결과, H 판정대기, I 판정완료&#xD;&#xA;   AND ACPT.INST_CD = OTPT.INST_CD&#xD;&#xA;   AND ACPT.HC_ACPT_SEQ_NO = OTPT.HC_ACPT_SEQ_NO&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;" show="false"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="GUBUN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RSRVDD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORDDEPTNM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORDDRNM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HNGNM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RRGSTNO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HOMETEL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MPPHONTEL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACPTDD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORDDD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORDTM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RSRVFLAG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FSEXAMFLAG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRCPCD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRCPNM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXECDEPTNM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REMFACT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_2">
+      <column comment="" key="false" length="-1" name="GUBUN" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RSRVDD" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ORDDEPTNM" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ORDDRNM" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="HNGNM" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RRGSTNO" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="HOMETEL" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MPPHONTEL" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ACPTDD" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ORDDD" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ORDTM" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RSRVFLAG" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FSEXAMFLAG" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRCPCD" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRCPNM" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXECDEPTNM" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REMFACT" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_es4MUMC8Eeqxw7WhnpvVLQ-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="user" name="user">
+      <column comment="" key="false" length="-1" name="GUBUN" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RSRVDD" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ORDDEPTNM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ORDDRNM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="HNGNM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RRGSTNO" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="HOMETEL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MPPHONTEL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ACPTDD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ORDDD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ORDTM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RSRVFLAG" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FSEXAMFLAG" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRCPCD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRCPNM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXECDEPTNM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REMFACT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="user">
+        <mapperTableEntries name="GUBUN" expression="row1.GUBUN " type="id_String"/>
+        <mapperTableEntries name="RSRVDD" expression="row1.RSRVDD " type="id_String"/>
+        <mapperTableEntries name="ORDDEPTNM" expression="row1.ORDDEPTNM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ORDDRNM" expression="row1.ORDDRNM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PID" expression="row1.PID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="HNGNM" expression="row1.HNGNM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RRGSTNO" expression="row1.RRGSTNO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="HOMETEL" expression="row1.HOMETEL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MPPHONTEL" expression="row1.MPPHONTEL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ACPTDD" expression="row1.ACPTDD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ORDDD" expression="row1.ORDDD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ORDTM" expression="row1.ORDTM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RSRVFLAG" expression="row1.RSRVFLAG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FSEXAMFLAG" expression="row1.FSEXAMFLAG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PRCPCD" expression="row1.PRCPCD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PRCPNM" expression="row1.PRCPNM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EXECDEPTNM" expression="row1.EXECDEPTNM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="REMFACT" expression="row1.REMFACT" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="GUBUN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RSRVDD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ORDDEPTNM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ORDDRNM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="HNGNM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RRGSTNO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="HOMETEL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MPPHONTEL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ACPTDD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ORDDD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ORDTM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RSRVFLAG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FSEXAMFLAG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PRCPCD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PRCPNM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EXECDEPTNM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="REMFACT" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_2" show="false"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/data/DurBatch/해외감염병정보_감염관리실_&quot;+TalendDate.formatDate(&quot;yyyyMMddHH&quot;, new Date()) + &quot;.xls&quot;"/>
+    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
+    <elementParameter field="CHECK" name="APPEND_SHEET" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_Y" value="0" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="FONT" value="COURIER"/>
+    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="true"/>
+    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="GUBUN"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RSRVDD"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORDDEPTNM"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORDDRNM"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PID"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HNGNM"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RRGSTNO"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HOMETEL"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MPPHONTEL"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACPTDD"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORDDD"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORDTM"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RSRVFLAG"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FSEXAMFLAG"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRCPCD"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRCPNM"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXECDEPTNM"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REMFACT"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROTECT_FILE" value="false" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:Y/FYKx1WTiZjGzztwkT6qwZdNqN0P+niUXG+uN97" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="100" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="user" name="tFileOutputExcel_2">
+      <column comment="구분" key="false" length="-1" name="GUBUN" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RSRVDD" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ORDDEPTNM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ORDDRNM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="HNGNM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RRGSTNO" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="HOMETEL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MPPHONTEL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ACPTDD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ORDDD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ORDTM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RSRVFLAG" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FSEXAMFLAG" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRCPCD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRCPNM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXECDEPTNM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REMFACT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="Oracle" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:crCQroYcX4lhPL7eK+COUtFDyddBvLtCPV35IP53" show="false"/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT COUNT(*) CNT FROM (&#xD;&#xA;SELECT DISTINCT '진료예약' AS GUBUN,&#xD;&#xA;       A.ORDDD AS RSRVDD,&#xD;&#xA;       COM.FN_ZS_GETDEPTNAME(A.INSTCD, A.ORDDEPTCD, A.ORDDD) AS ORDDEPTNM, --진료과&#xD;&#xA;       COM.FN_ZS_GETUSERNM(A.ORDDRID,A.ORDDD) AS ORDDRNM,   --진료의사&#xD;&#xA;       A.PID AS PID,    --등록번호&#xD;&#xA;       HNGNM AS HNGNM,  --성명&#xD;&#xA;       E.RRGSTNO1 || SUBSTR(E.RRGSTNO2,0,1)||'******' AS RRGSTNO,   --주민번호&#xD;&#xA;       E.HOMETEL AS HOMETEL,    -- 연락처&#xD;&#xA;       E.MPPHONTEL AS MPPHONTEL,    -- 휴대폰&#xD;&#xA;       A.ORGORDDD AS ACPTDD,    --접수일자&#xD;&#xA;       A.ORDDD AS ORDDD,    --진료일자&#xD;&#xA;       A.ORDTM AS ORDTM,    --시간&#xD;&#xA;       (SELECT CDNM FROM COM.ZBCMCODE WHERE CDGRUPID = 'P0341' AND CDID = A.RSRVFLAG) AS RSRVFLAG,  --예약구분&#xD;&#xA;       (SELECT CDNM FROM COM.ZBCMCODE WHERE CDGRUPID = 'P0021' AND CDID = A.FSEXAMFLAG) AS FSEXAMFLAG,  --초재진&#xD;&#xA;       '' PRCPCD,   --처방코드&#xD;&#xA;       '' PRCPNM,   --처방명칭&#xD;&#xA;       '' EXECDEPTNM,   --시행부서&#xD;&#xA;       (SELECT Y.TMP31 FROM PAM.SERVICECOOP Y WHERE Y.TMP01 = 'ZIKA' AND Y.TMP02 = E.RRGSTNO1 AND Y.TMP03 = E.RRGSTNO2 AND Y.TMP11 = 'Y' AND ROWNUM =1 ) AS REMFACT --전송내역&#xD;&#xA;  FROM PAM.PMOHOTPT A, PAM.PMCMPTBS E&#xD;&#xA; WHERE A.INSTCD = NVL( '014', '014')&#xD;&#xA;   AND A.ORDDD BETWEEN TO_CHAR(SYSDATE + 0.5, 'YYYYMMDD') AND (SELECT MIN(BASEDD) FROM PAM.PMBMHSCH WHERE BASEDD > TO_CHAR(SYSDATE - 0.5, 'YYYYMMDD') AND HISTSTAT = 'Y' AND DUTFLAG = '0')&#xD;&#xA;   AND A.HISTSTAT IN ( 'R', 'T' )&#xD;&#xA;   AND A.ORDTYPE = 'O'&#xD;&#xA;--   AND (A.INSUKIND IN ('11', '21', '22') OR (A.INSUKIND = '51' AND RSRVFLAG = '5'))&#xD;&#xA;   AND A.PID = E.PID&#xD;&#xA;   AND A.INSTCD = E.INSTCD&#xD;&#xA;   AND EXISTS &#xD;&#xA;      (SELECT Y.TMP04&#xD;&#xA;         FROM PAM.SERVICECOOP Y&#xD;&#xA;        WHERE Y.TMP01 = 'ZIKA'&#xD;&#xA;          AND Y.TMP11 = 'Y'&#xD;&#xA;          AND Y.TMP02 = E.RRGSTNO1&#xD;&#xA;          AND Y.TMP03 = E.RRGSTNO2&#xD;&#xA;          AND Y.TMP10 = E.PID)&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT DISTINCT '진료예약' AS GUBUN,&#xD;&#xA;       A.ORDDD AS RSRVDD,&#xD;&#xA;       COM.FN_ZS_GETDEPTNAME(A.INSTCD, A.ORDDEPTCD, A.ORDDD) AS ORDDEPTNM, --진료과&#xD;&#xA;       COM.FN_ZS_GETUSERNM(A.ORDDRID,A.ORDDD) AS ORDDRNM,   --진료의사&#xD;&#xA;       A.PID AS PID,    --등록번호&#xD;&#xA;       HNGNM AS HNGNM,  --성명&#xD;&#xA;       E.RRGSTNO1 || SUBSTR(E.RRGSTNO2,0,1)||'******' AS RRGSTNO,   --주민번호&#xD;&#xA;       E.HOMETEL AS HOMETEL,    -- 연락처&#xD;&#xA;       E.MPPHONTEL AS MPPHONTEL,    -- 휴대폰&#xD;&#xA;       A.ORGORDDD AS ACPTDD,    --접수일자&#xD;&#xA;       A.ORDDD AS ORDDD,    --진료일자&#xD;&#xA;       A.ORDTM AS ORDTM,    --시간&#xD;&#xA;       (SELECT CDNM FROM COM.ZBCMCODE WHERE CDGRUPID = 'P0341' AND CDID = A.RSRVFLAG) AS RSRVFLAG,  --예약구분&#xD;&#xA;       (SELECT CDNM FROM COM.ZBCMCODE WHERE CDGRUPID = 'P0021' AND CDID = A.FSEXAMFLAG) AS FSEXAMFLAG,  --초재진&#xD;&#xA;       '' PRCPCD,   --처방코드&#xD;&#xA;       '' PRCPNM,   --처방명칭&#xD;&#xA;       '' EXECDEPTNM,   --시행부서&#xD;&#xA;       (SELECT Y.TMP31 FROM PAM.SERVICECOOP Y WHERE Y.TMP01 = 'ZIKA' AND Y.TMP02 = E.RRGSTNO1 AND Y.TMP03 = E.RRGSTNO2 AND Y.TMP11 = 'Y' AND ROWNUM =1 ) AS REMFACT --전송내역&#xD;&#xA;  FROM PAM.PMOHOTPT A, PAM.PMCMPTBS E, PAM.PMCHSCND B&#xD;&#xA; WHERE A.INSTCD = NVL( '014', '014')&#xD;&#xA;   AND A.ORDDD BETWEEN TO_CHAR(SYSDATE + 0.5, 'YYYYMMDD') AND (SELECT MIN(BASEDD) FROM PAM.PMBMHSCH WHERE BASEDD > TO_CHAR(SYSDATE - 0.5, 'YYYYMMDD') AND HISTSTAT = 'Y' AND DUTFLAG = '0')&#xD;&#xA;   AND A.HISTSTAT IN ( 'R', 'T' )&#xD;&#xA;   AND A.ORDTYPE = 'O'&#xD;&#xA;--   AND (A.INSUKIND IN ('11', '21', '22') OR (A.INSUKIND = '51' AND RSRVFLAG = '5'))&#xD;&#xA;   AND A.PID = E.PID&#xD;&#xA;   AND A.INSTCD = E.INSTCD&#xD;&#xA;   AND B.INSTCD = E.INSTCD&#xD;&#xA;   AND B.RRGSTNO1 = E.RRGSTNO1&#xD;&#xA;   AND B.RRGSTNO2 = E.RRGSTNO2&#xD;&#xA;   AND A.ORDDD BETWEEN B.FROMDD AND B.TODD&#xD;&#xA;   AND EXISTS &#xD;&#xA;       (SELECT Y.TMP04&#xD;&#xA;          FROM PAM.SERVICECOOP Y&#xD;&#xA;         WHERE Y.TMP01 = 'ZIKA'&#xD;&#xA;           AND Y.TMP11 = 'Y'&#xD;&#xA;           AND Y.TMP02 = E.RRGSTNO1&#xD;&#xA;           AND Y.TMP03 = E.RRGSTNO2&#xD;&#xA;           AND Y.TMP10 = E.PID)&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT DISTINCT '진료예약' AS GUBUN,&#xD;&#xA;       A.ORDDD AS RSRVDD,&#xD;&#xA;       COM.FN_ZS_GETDEPTNAME(A.INSTCD, A.ORDDEPTCD, A.ORDDD) AS ORDDEPTNM, --진료과&#xD;&#xA;       COM.FN_ZS_GETUSERNM(A.ORDDRID,A.ORDDD) AS ORDDRNM,   --진료의사&#xD;&#xA;       A.PID AS PID,    --등록번호&#xD;&#xA;       HNGNM AS HNGNM,  --성명&#xD;&#xA;       E.RRGSTNO1 || SUBSTR(E.RRGSTNO2,0,1)||'******' AS RRGSTNO,   --주민번호&#xD;&#xA;       E.HOMETEL AS HOMETEL,    -- 연락처&#xD;&#xA;       E.MPPHONTEL AS MPPHONTEL,    -- 휴대폰&#xD;&#xA;       A.ORGORDDD AS ACPTDD,    --접수일자&#xD;&#xA;       A.ORDDD AS ORDDD,    --진료일자&#xD;&#xA;       A.ORDTM AS ORDTM,    --시간&#xD;&#xA;       (SELECT CDNM FROM COM.ZBCMCODE WHERE CDGRUPID = 'P0341' AND CDID = A.RSRVFLAG) AS RSRVFLAG,  --예약구분&#xD;&#xA;       (SELECT CDNM FROM COM.ZBCMCODE WHERE CDGRUPID = 'P0021' AND CDID = A.FSEXAMFLAG) AS FSEXAMFLAG,  --초재진&#xD;&#xA;       '' PRCPCD,   --처방코드&#xD;&#xA;       '' PRCPNM,   --처방명칭&#xD;&#xA;       '' EXECDEPTNM,   --시행부서&#xD;&#xA;       (SELECT Y.TMP31 FROM PAM.SERVICECOOP Y WHERE Y.TMP01 = 'ZIKA' AND Y.TMP02 = E.RRGSTNO1 AND Y.TMP03 = E.RRGSTNO2 AND Y.TMP11 = 'Y' AND ROWNUM =1 ) AS REMFACT --전송내역&#xD;&#xA;  FROM PAM.PMOHOTPT A, PAM.PMCMPTBS E, PAM.PMCHRARE B&#xD;&#xA; WHERE A.INSTCD = NVL( '014', '014')&#xD;&#xA;   AND A.ORDDD BETWEEN TO_CHAR(SYSDATE + 0.5, 'YYYYMMDD') AND (SELECT MIN(BASEDD) FROM PAM.PMBMHSCH WHERE BASEDD > TO_CHAR(SYSDATE - 0.5, 'YYYYMMDD') AND HISTSTAT = 'Y' AND DUTFLAG = '0')&#xD;&#xA;   AND A.HISTSTAT IN ( 'R', 'T' )&#xD;&#xA;   AND A.ORDTYPE = 'O'&#xD;&#xA;--   AND (A.INSUKIND IN ('11', '21', '22') OR (A.INSUKIND = '51' AND RSRVFLAG = '5'))&#xD;&#xA;   AND A.PID = E.PID&#xD;&#xA;   AND A.INSTCD = E.INSTCD&#xD;&#xA;   AND B.INSTCD = E.INSTCD&#xD;&#xA;   AND B.RRGSTNO1 = E.RRGSTNO1&#xD;&#xA;   AND B.RRGSTNO2 = E.RRGSTNO2&#xD;&#xA;   AND A.ORDDD BETWEEN B.FROMDD AND B.TODD&#xD;&#xA;   AND EXISTS &#xD;&#xA;       (SELECT Y.TMP04&#xD;&#xA;          FROM PAM.SERVICECOOP Y&#xD;&#xA;         WHERE Y.TMP01 = 'ZIKA'&#xD;&#xA;           AND Y.TMP11 = 'Y'&#xD;&#xA;           AND Y.TMP02 = E.RRGSTNO1&#xD;&#xA;           AND Y.TMP03 = E.RRGSTNO2&#xD;&#xA;           AND Y.TMP10 = E.PID)&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT /*+ LEADING(EXOP OTPT OPRC) INDEX_SS(EXOP IX_MMODEXOP_09) */&#xD;&#xA;       DISTINCT '검사예약' AS GUBUN,&#xD;&#xA;       EXOP.RSRVDD,&#xD;&#xA;       COM.FN_ZS_GETDEPTNAME(OTPT.INSTCD, OTPT.ORDDEPTCD, OTPT.ORDDD) AS ORDDEPTNM, --진료과&#xD;&#xA;       COM.FN_ZS_GETUSERNM(OTPT.ORDDRID, OTPT.ORDDD) AS ORDDRNM,   --진료의사&#xD;&#xA;       OTPT.PID AS PID,    --등록번호&#xD;&#xA;       PTBS.HNGNM,  --성명&#xD;&#xA;       PTBS.RRGSTNO1 || SUBSTR(PTBS.RRGSTNO2,0,1)||'******' AS RRGSTNO,   --주민번호&#xD;&#xA;       PTBS.HOMETEL AS HOMETEL,    -- 연락처&#xD;&#xA;       PTBS.MPPHONTEL AS MPPHONTEL,    -- 휴대폰&#xD;&#xA;       OTPT.ORGORDDD AS ACPTDD,    --접수일자&#xD;&#xA;       OTPT.ORDDD AS ORDDD,    --진료일자&#xD;&#xA;       OTPT.ORDTM AS ORDTM,    --시간&#xD;&#xA;       (SELECT CDNM FROM COM.ZBCMCODE WHERE CDGRUPID = 'P0341' AND CDID = OTPT.RSRVFLAG) AS RSRVFLAG,  --예약구분&#xD;&#xA;       (SELECT CDNM FROM COM.ZBCMCODE WHERE CDGRUPID = 'P0021' AND CDID = OTPT.FSEXAMFLAG) AS FSEXAMFLAG,  --초재진&#xD;&#xA;       OPRC.PRCPCD,   --처방코드&#xD;&#xA;       OPRC.PRCPNM,   --처방명칭&#xD;&#xA;       COM.FN_ZS_GETDEPTNAME(OTPT.INSTCD, EXOP.EXECDEPTCD,OTPT.ORDDD) EXECDEPTNM,   --시행부서&#xD;&#xA;       (SELECT Y.TMP31 FROM PAM.SERVICECOOP Y WHERE Y.TMP01 = 'ZIKA' AND Y.TMP02 = PTBS.RRGSTNO1 AND Y.TMP03 = PTBS.RRGSTNO2 AND Y.TMP11 = 'Y' AND ROWNUM = 1) AS REMFACT --전송내역&#xD;&#xA;  FROM EMR.MMODEXOP EXOP, EMR.MMOHOPRC OPRC, PAM.PMOHOTPT OTPT, PAM.PMCMPTBS PTBS&#xD;&#xA; WHERE OTPT.INSTCD = NVL( '014', '014')&#xD;&#xA;   AND OTPT.HISTSTAT IN ('R','T')&#xD;&#xA;--   AND OTPT.INSUKIND IN ('11','21','22')&#xD;&#xA;   AND OTPT.ORDDD BETWEEN TO_CHAR(ADD_MONTHS(TO_DATE( '20200623','YYYYMMDD'), -36),'YYYYMMDD') AND '20200623' --3년데이터&#xD;&#xA;   AND OTPT.ORDTYPE != 'S'&#xD;&#xA;   AND OTPT.INSTCD = PTBS.INSTCD&#xD;&#xA;   AND OTPT.PID = PTBS.PID&#xD;&#xA;   AND OTPT.INSTCD = EXOP.INSTCD&#xD;&#xA;   AND OTPT.PID = EXOP.PID&#xD;&#xA;   AND OTPT.CRETNO = EXOP.ACTCRETNO&#xD;&#xA;   AND OTPT.ORDDD = EXOP.ACTORDDD&#xD;&#xA;   AND EXOP.INSTCD = OPRC.INSTCD&#xD;&#xA;   AND EXOP.PID = OPRC.PID&#xD;&#xA;   AND EXOP.PRCPDD = OPRC.PRCPDD&#xD;&#xA;   AND EXOP.PRCPNO = OPRC.PRCPNO&#xD;&#xA;   AND EXOP.EXECPRCPHISTCD = OPRC.PRCPHISTCD&#xD;&#xA;   AND OPRC.PRCPHISTCD = 'O'&#xD;&#xA;   AND EXOP.EXECPRCPHISTCD = 'O'&#xD;&#xA;   AND EXOP.RSRVFLAG = 'Y' --예약검사여부&#xD;&#xA;   AND EXOP.EXECDD = '00000000' --실시여부&#xD;&#xA;   AND EXOP.RSRVDD BETWEEN TO_CHAR(SYSDATE + 0.5, 'YYYYMMDD') AND (SELECT MIN(BASEDD) FROM PAM.PMBMHSCH WHERE BASEDD > TO_CHAR(SYSDATE - 0.5, 'YYYYMMDD') AND HISTSTAT = 'Y' AND DUTFLAG = '0')&#xD;&#xA;   AND EXISTS&#xD;&#xA;       (SELECT Y.TMP04&#xD;&#xA;          FROM PAM.SERVICECOOP Y&#xD;&#xA;         WHERE Y.TMP01 = 'ZIKA'&#xD;&#xA;           AND Y.TMP11 = 'Y'&#xD;&#xA;           AND Y.TMP02 = PTBS.RRGSTNO1&#xD;&#xA;           AND Y.TMP03 = PTBS.RRGSTNO2&#xD;&#xA;           AND Y.TMP10 = PTBS.PID)&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT DISTINCT '검사예약' AS GUBUN,&#xD;&#xA;       A.EXECDD AS RSRVDD,&#xD;&#xA;       COM.FN_ZS_GETDEPTNAME(A.INSTCD, A.ORDDEPTCD, A.ORDDD) AS ORDDEPTNM, --진료과&#xD;&#xA;       COM.FN_ZS_GETUSERNM(A.ORDDRID, A.ORDDD) AS ORDDRNM,   --진료의사&#xD;&#xA;       A.PID AS PID,    --등록번호&#xD;&#xA;       B.HNGNM,  --성명&#xD;&#xA;       B.RRGSTNO1 || SUBSTR(B.RRGSTNO2,0,1)||'******' AS RRGSTNO,   --주민번호&#xD;&#xA;       B.HOMETEL AS HOMETEL,    -- 연락처&#xD;&#xA;       B.MPPHONTEL AS MPPHONTEL,    -- 휴대폰&#xD;&#xA;       '' AS ACPTDD,    --접수일자&#xD;&#xA;       A.ORDDD AS ORDDD,    --진료일자&#xD;&#xA;       '' AS ORDTM,    --시간&#xD;&#xA;       '' AS RSRVFLAG,  --예약구분&#xD;&#xA;       '' AS FSEXAMFLAG,  --초재진&#xD;&#xA;       '' AS PRCPCD,   --처방코드&#xD;&#xA;       '' AS PRCPNM,   --처방명칭&#xD;&#xA;       '' AS EXECDEPTNM,   --시행부서&#xD;&#xA;       (SELECT Y.TMP31 FROM PAM.SERVICECOOP Y WHERE Y.TMP01 = 'ZIKA' AND Y.TMP02 = B.RRGSTNO1 AND Y.TMP03 = B.RRGSTNO2 AND Y.TMP11 = 'Y' AND ROWNUM =1) AS REMFACT --전송내역&#xD;&#xA;  FROM PAM.PAOHOSCL A, PAM.PMCMPTBS B&#xD;&#xA; WHERE A.INSTCD = NVL( '014', '014')&#xD;&#xA;   AND A.EXECDD BETWEEN TO_CHAR(SYSDATE + 0.5, 'YYYYMMDD') AND (SELECT MIN(BASEDD) FROM PAM.PMBMHSCH WHERE BASEDD > TO_CHAR(SYSDATE - 0.5, 'YYYYMMDD') AND HISTSTAT = 'Y' AND DUTFLAG = '0')&#xD;&#xA;   AND A.ORDTYPE != 'S'&#xD;&#xA;   AND A.CALCSTAT = 'Y'&#xD;&#xA;--   AND A.INSUKIND = '11'&#xD;&#xA;   AND A.SUPPKIND != '01'&#xD;&#xA;   AND A.INSTCD = B.INSTCD&#xD;&#xA;   AND A.PID = B.PID&#xD;&#xA;   AND A.RCPTDD BETWEEN TO_CHAR(ADD_MONTHS(TO_DATE( '20200623', 'YYYYMMDD')-1, -12), 'YYYYMMDD') AND '20200623'-1&#xD;&#xA;   AND A.ORDDD BETWEEN TO_CHAR(ADD_MONTHS(TO_DATE( '20200623', 'YYYYMMDD')-1, -12), 'YYYYMMDD') AND '20200623'-1&#xD;&#xA;   AND EXISTS&#xD;&#xA;       (SELECT Y.TMP04&#xD;&#xA;          FROM PAM.SERVICECOOP Y&#xD;&#xA;         WHERE Y.TMP01 = 'ZIKA'&#xD;&#xA;           AND Y.TMP11 = 'Y'&#xD;&#xA;           AND Y.TMP02 = B.RRGSTNO1&#xD;&#xA;           AND Y.TMP03 = B.RRGSTNO2&#xD;&#xA;           AND Y.TMP10 = B.PID)&#xD;&#xA; GROUP BY A.PID, A.ORDDD, A.CRETNO, A.INSTCD, A.ORDTYPE, EXECDD, RRGSTNO1||RRGSTNO2, HNGNM, A.ORDDEPTCD, A.SUPPKIND, A.INSUKIND, A.ORDDRID, B.RRGSTNO1, B.RRGSTNO2, B.HOMETEL, B.MPPHONTEL&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT 'DSC예약' AS GUBUN,&#xD;&#xA;       A.INDD AS RSRVDD,&#xD;&#xA;       COM.FN_ZS_GETDEPTNAME(A.INSTCD, A.ORDDEPTCD, A.INDD) AS ORDDEPTNM, --진료과&#xD;&#xA;       COM.FN_ZS_GETUSERNM(A.MEDISPCLID, A.INDD) AS ORDDRNM,   --진료의사&#xD;&#xA;       A.PID AS PID,    --등록번호&#xD;&#xA;       E.HNGNM,  --성명&#xD;&#xA;       E.RRGSTNO1 || SUBSTR(E.RRGSTNO2,0,1)||'******' AS RRGSTNO,   --주민번호&#xD;&#xA;       E.HOMETEL AS HOMETEL,    -- 연락처&#xD;&#xA;       E.MPPHONTEL AS MPPHONTEL,    -- 휴대폰&#xD;&#xA;       A.INDD AS ACPTDD,    --접수일자&#xD;&#xA;       A.INDD AS ORDDD,    --진료일자&#xD;&#xA;       A.INTM AS ORDTM,    --시간&#xD;&#xA;       '' AS RSRVFLAG,  --예약구분&#xD;&#xA;       '' AS FSEXAMFLAG,  --초재진&#xD;&#xA;       '' AS PRCPCD,   --처방코드&#xD;&#xA;       '' AS PRCPNM,   --처방명칭&#xD;&#xA;       '' AS EXECDEPTNM,   --시행부서&#xD;&#xA;       (SELECT Y.TMP31 FROM PAM.SERVICECOOP Y WHERE Y.TMP01 = 'ZIKA' AND Y.TMP02 = E.RRGSTNO1 AND Y.TMP03 = E.RRGSTNO2 AND Y.TMP11 = 'Y' AND ROWNUM =1 ) AS REMFACT --전송내역&#xD;&#xA;   FROM PAM.PMIHINPT A, PAM.PMCMPTBS E&#xD;&#xA; WHERE A.INSTCD = NVL( '014', '014')&#xD;&#xA;   AND A.INDD BETWEEN TO_CHAR(SYSDATE + 0.5, 'YYYYMMDD') AND (SELECT MIN(BASEDD) FROM PAM.PMBMHSCH WHERE BASEDD > TO_CHAR(SYSDATE - 0.5, 'YYYYMMDD') AND HISTSTAT = 'Y' AND DUTFLAG = '0')&#xD;&#xA;   AND A.HISTSTAT = 'Y'&#xD;&#xA;   AND A.ORDTYPE = 'D'&#xD;&#xA;   AND A.DSCHDD = '99991231'&#xD;&#xA;   AND A.CALCDD = '00000000' --입실체크 안된내역만.&#xD;&#xA;   AND A.CALCTM = '0000'&#xD;&#xA;--   AND (A.INSUKIND IN ('11', '21', '22') OR (A.INSUKIND = '51'))&#xD;&#xA;   AND A.PID = E.PID&#xD;&#xA;   AND A.INSTCD = E.INSTCD&#xD;&#xA;   AND EXISTS &#xD;&#xA;       (SELECT Y.TMP04&#xD;&#xA;          FROM PAM.SERVICECOOP Y&#xD;&#xA;         WHERE Y.TMP01 = 'ZIKA'&#xD;&#xA;           AND Y.TMP11 = 'Y'&#xD;&#xA;           AND Y.TMP02 = E.RRGSTNO1&#xD;&#xA;           AND Y.TMP03 = E.RRGSTNO2&#xD;&#xA;           AND Y.TMP10 = E.PID)&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT DISTINCT '입원예약' AS GUGUN,&#xD;&#xA;       A.PATINHOPEDD AS RSRVDD,&#xD;&#xA;       COM.FN_ZS_GETDEPTNAME(A.INSTCD, A.ORDDEPTCD, A.PATINHOPEDD) AS ORDDEPTNM, --진료과&#xD;&#xA;       COM.FN_ZS_GETUSERNM(A.ORDDRID, A.INDIRECDD) AS ORDDRNM,   --진료의사&#xD;&#xA;       A.PID AS PID,    --등록번호&#xD;&#xA;       E.HNGNM,  --성명&#xD;&#xA;       E.RRGSTNO1 || SUBSTR(E.RRGSTNO2,0,1)||'******' AS RRGSTNO,   --주민번호&#xD;&#xA;       E.HOMETEL AS HOMETEL,    -- 연락처&#xD;&#xA;       E.MPPHONTEL AS MPPHONTEL,    -- 휴대폰&#xD;&#xA;       '' AS ACPTDD,    --접수일자&#xD;&#xA;       A.PATINHOPEDD AS ORDDD,    --진료일자&#xD;&#xA;       '' AS ORDTM,    --시간&#xD;&#xA;       '' AS RSRVFLAG,  --예약구분&#xD;&#xA;       '' AS FSEXAMFLAG,  --초재진&#xD;&#xA;       '' AS PRCPCD,   --처방코드&#xD;&#xA;       '' AS PRCPNM,   --처방명칭&#xD;&#xA;       '' AS EXECDEPTNM,   --시행부서&#xD;&#xA;       (SELECT Y.TMP31 FROM PAM.SERVICECOOP Y WHERE Y.TMP01 = 'ZIKA' AND Y.TMP02 = E.RRGSTNO1 AND Y.TMP03 = E.RRGSTNO2 AND Y.TMP11 = 'Y' AND ROWNUM =1 ) AS REMFACT --전송내역&#xD;&#xA;  FROM PAM.PMIHADRV A, PAM.PMCMPTBS B, PAM.PMIHINPT C, PAM.PMCMPTBS E&#xD;&#xA; WHERE A.PID = B.PID&#xD;&#xA;   AND A.INSTCD = B.INSTCD&#xD;&#xA;   AND A.INSTCD = '014'&#xD;&#xA;   AND A.INSTCD = E.INSTCD&#xD;&#xA;   AND A.PID = E.PID&#xD;&#xA;   AND C.INSTCD(+) = A.INSTCD&#xD;&#xA;   AND C.PID(+) = A.PID&#xD;&#xA;   AND C.HISTSTAT(+) = 'Y'&#xD;&#xA;   AND C.INDSCHACPTSTAT(+) = 'A'&#xD;&#xA;   AND C.DSCHDD(+) = '99991231'&#xD;&#xA;   AND C.ORDTYPE(+) = 'I'&#xD;&#xA;   AND A.INRSRVSTAT IN ('S','R')&#xD;&#xA;   AND A.INFLAG = 'G'&#xD;&#xA;   AND A.ERREGLYN IN ('I','F','R','G','D')&#xD;&#xA;   AND A.PATINHOPEDD BETWEEN TO_CHAR(SYSDATE + 0.5, 'YYYYMMDD') AND (SELECT MIN(BASEDD) FROM PAM.PMBMHSCH WHERE BASEDD > TO_CHAR(SYSDATE - 0.5, 'YYYYMMDD') AND HISTSTAT = 'Y' AND DUTFLAG = '0')&#xD;&#xA;   AND EXISTS&#xD;&#xA;       (SELECT Y.TMP04&#xD;&#xA;          FROM PAM.SERVICECOOP Y&#xD;&#xA;         WHERE Y.TMP01 = 'ZIKA'&#xD;&#xA;           AND Y.TMP11 = 'Y'&#xD;&#xA;           AND Y.TMP02 = E.RRGSTNO1&#xD;&#xA;           AND Y.TMP03 = E.RRGSTNO2&#xD;&#xA;           AND Y.TMP10 = E.PID)&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT '건진예약' AS GUBUN,&#xD;&#xA;       TO_CHAR(ACPT.ACPT_DD, 'YYYYMMDD') AS RSRVDD,&#xD;&#xA;       COM.FN_ZS_GETDEPTNAME(ACPT.INST_CD, ACPT.PRCP_DEPT_CD, TO_CHAR(OTPT.OPD_MEDTRT_DD, 'YYYYMMDD')) AS ORDDEPTNM, --진료과&#xD;&#xA;       COM.FN_ZS_GETUSERNM(ACPT.PRCP_DR_ID,TO_CHAR(ACPT.ACPT_DD, 'YYYYMMDD')) AS ORDDRNM,   --진료의사&#xD;&#xA;       ACPT.PID AS PID,    --등록번호&#xD;&#xA;       PATM.CLNT_NM AS HNGNM,  --성명&#xD;&#xA;       PATM.RES_NO1 || SUBSTR(PATM.RES_NO2,0,1)||'******' AS RRGSTNO,   --주민번호&#xD;&#xA;       PATM.GNRL_TEL_NO AS HOMETEL,    -- 연락처&#xD;&#xA;       PATM.MPPHON_NO AS MPPHONTEL,    -- 휴대폰&#xD;&#xA;       TO_CHAR(ACPT.ACPT_DD, 'YYYYMMDD') AS ACPTDD,    --접수일자&#xD;&#xA;       TO_CHAR(OTPT.OPD_MEDTRT_DD, 'YYYYMMDD') AS ORDDD,    --진료일자&#xD;&#xA;       OTPT.OPD_MEDTRT_TM AS ORDTM,    --시간&#xD;&#xA;       (SELECT CD_VAL_NM FROM HC.HCBMCODE WHERE GRUP_CD_ID = 'A0119' AND CD_VAL = ACPT.RSRV_FLAG) AS RSRVFLAG,  --예약구분&#xD;&#xA;       (CASE WHEN ACPT.RMDEM_YN = 'Y' THEN '재진' ELSE '초진' END) AS FSEXAMFLAG,  --초재진&#xD;&#xA;       '' AS PRCPCD,   --처방코드&#xD;&#xA;       '' AS PRCPNM,   --처방명칭&#xD;&#xA;       '' AS EXECDEPTNM,   --시행부서&#xD;&#xA;       (SELECT Y.TMP31 FROM PAM.SERVICECOOP Y WHERE Y.TMP01 = 'ZIKA' AND Y.TMP02 = PATM.RES_NO1 AND Y.TMP03 = PATM.RES_NO2 AND Y.TMP11 = 'Y' AND ROWNUM = 1) AS REMFACT --전송내역&#xD;&#xA;  FROM HC.HCAMACPT ACPT, HC.HCAMPATM PATM, HC.HCADOTPT OTPT&#xD;&#xA; WHERE ACPT.INST_CD = NVL( '014', '014')&#xD;&#xA;   AND ACPT.ACPT_DD BETWEEN TO_CHAR(SYSDATE + 0.5, 'YYYYMMDD') AND (SELECT MIN(BASEDD) FROM PAM.PMBMHSCH WHERE BASEDD > TO_CHAR(SYSDATE - 0.5, 'YYYYMMDD') AND HISTSTAT = 'Y' AND DUTFLAG = '0')&#xD;&#xA;   AND ACPT.INST_CD = PATM.INST_CD&#xD;&#xA;   AND ACPT.PID = PATM.PID&#xD;&#xA;   AND EXISTS &#xD;&#xA;       (SELECT Y.TMP04&#xD;&#xA;          FROM PAM.SERVICECOOP Y&#xD;&#xA;         WHERE Y.TMP01 = 'ZIKA'&#xD;&#xA;           AND Y.TMP11 = 'Y'&#xD;&#xA;           AND Y.TMP02 = PATM.RES_NO1&#xD;&#xA;           AND Y.TMP03 = PATM.RES_NO2&#xD;&#xA;           AND Y.TMP10 = PATM.PID)&#xD;&#xA;   AND ACPT.HC_STAT IN ('C')--A 가예약, B 가예약취소, C 예약, D 예약취소, E 접수, F 접수취소, G 결과, H 판정대기, I 판정완료&#xD;&#xA;   AND ACPT.INST_CD = OTPT.INST_CD&#xD;&#xA;   AND ACPT.HC_ACPT_SEQ_NO = OTPT.HC_ACPT_SEQ_NO&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT '건진예약' AS GUBUN,&#xD;&#xA;       TO_CHAR(RCNT.RSLT_CNST_DD, 'YYYYMMDD') AS RSRVDD,&#xD;&#xA;       COM.FN_ZS_GETDEPTNAME(ACPT.INST_CD, ACPT.PRCP_DEPT_CD, TO_CHAR(OTPT.OPD_MEDTRT_DD, 'YYYYMMDD')) AS ORDDEPTNM, --진료과&#xD;&#xA;       COM.FN_ZS_GETUSERNM(ACPT.PRCP_DR_ID,TO_CHAR(ACPT.ACPT_DD, 'YYYYMMDD')) AS ORDDRNM,   --진료의사&#xD;&#xA;       ACPT.PID AS PID,    --등록번호&#xD;&#xA;       PATM.CLNT_NM AS HNGNM,  --성명&#xD;&#xA;       PATM.RES_NO1 || SUBSTR(PATM.RES_NO2,0,1)||'******' AS RRGSTNO,   --주민번호&#xD;&#xA;       PATM.GNRL_TEL_NO AS HOMETEL,    -- 연락처&#xD;&#xA;       PATM.MPPHON_NO AS MPPHONTEL,    -- 휴대폰&#xD;&#xA;       TO_CHAR(ACPT.ACPT_DD, 'YYYYMMDD') AS ACPTDD,    --접수일자&#xD;&#xA;       TO_CHAR(OTPT.OPD_MEDTRT_DD, 'YYYYMMDD') AS ORDDD,    --진료일자&#xD;&#xA;       OTPT.OPD_MEDTRT_TM AS ORDTM,    --시간&#xD;&#xA;       (SELECT CD_VAL_NM FROM HC.HCBMCODE WHERE GRUP_CD_ID = 'A0119' AND CD_VAL = ACPT.RSRV_FLAG) AS RSRVFLAG,  --예약구분&#xD;&#xA;       '상담' AS FSEXAMFLAG,  --초재진&#xD;&#xA;       '' AS PRCPCD,   --처방코드&#xD;&#xA;       '' AS PRCPNM,   --처방명칭&#xD;&#xA;       '' AS EXECDEPTNM,   --시행부서&#xD;&#xA;       (SELECT Y.TMP31 FROM PAM.SERVICECOOP Y WHERE Y.TMP01 = 'ZIKA' AND Y.TMP02 = PATM.RES_NO1 AND Y.TMP03 = PATM.RES_NO2 AND Y.TMP11 = 'Y' AND ROWNUM = 1) AS REMFACT --전송내역&#xD;&#xA;  FROM HC.HCAMRCNT RCNT, HC.HCAMACPT ACPT, HC.HCAMPATM PATM, HC.HCADOTPT OTPT&#xD;&#xA; WHERE RCNT.INST_CD = NVL( '014', '014')&#xD;&#xA;   AND RCNT.RSLT_CNST_DD BETWEEN TO_CHAR(SYSDATE + 0.5, 'YYYYMMDD') AND (SELECT MIN(BASEDD) FROM PAM.PMBMHSCH WHERE BASEDD > TO_CHAR(SYSDATE - 0.5, 'YYYYMMDD') AND HISTSTAT = 'Y' AND DUTFLAG = '0')&#xD;&#xA;   AND RCNT.RSLT_CNST_VALI_CNST_CD = 'O'&#xD;&#xA;   AND EXISTS &#xD;&#xA;       (SELECT 1&#xD;&#xA;          FROM HC.HCBMCODE SUB&#xD;&#xA;         WHERE SUB.INST_CD = RCNT.INST_CD&#xD;&#xA;           AND SUB.GRUP_CD_ID = 'A0003'&#xD;&#xA;           AND SUB.CD_VAL_NM LIKE '%내원%'&#xD;&#xA;           AND SUB.USE_YN = 'Y'&#xD;&#xA;           AND RCNT.RSLT_CNST_DD BETWEEN SUB.USE_FRDD AND SUB.USE_TODD&#xD;&#xA;           AND SUB.CD_VAL = RCNT.RSLT_CNST_FLAG)&#xD;&#xA;   AND RCNT.INST_CD = ACPT.INST_CD&#xD;&#xA;   AND RCNT.HC_ACPT_SEQ_NO = ACPT.HC_ACPT_SEQ_NO&#xD;&#xA;   AND ACPT.INST_CD = PATM.INST_CD&#xD;&#xA;   AND ACPT.PID = PATM.PID&#xD;&#xA;   AND EXISTS&#xD;&#xA;       (SELECT Y.TMP04&#xD;&#xA;          FROM PAM.SERVICECOOP Y&#xD;&#xA;         WHERE Y.TMP01 = 'ZIKA'&#xD;&#xA;           AND Y.TMP11 = 'Y'&#xD;&#xA;           AND Y.TMP02 = PATM.RES_NO1&#xD;&#xA;           AND Y.TMP03 = PATM.RES_NO2&#xD;&#xA;           AND Y.TMP10 = PATM.PID)&#xD;&#xA;   AND ACPT.HC_STAT NOT IN ('B','D','F')--A 가예약, B 가예약취소, C 예약, D 예약취소, E 접수, F 접수취소, G 결과, H 판정대기, I 판정완료&#xD;&#xA;   AND ACPT.INST_CD = OTPT.INST_CD&#xD;&#xA;   AND ACPT.HC_ACPT_SEQ_NO = OTPT.HC_ACPT_SEQ_NO&#xD;&#xA;)&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;" show="false"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CNT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" key="false" length="-1" name="CNT" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="globalMap.put(&quot;cnt&quot;, row2.CNT);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_1">
+      <column comment="" key="false" length="-1" name="CNT" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSystem" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_2" show="false"/>
+    <elementParameter field="CHECK" name="ROOTDIR" value="true"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;D:\data\DurBatch\CompactCTalkSender&quot;"/>
+    <elementParameter field="RADIO" name="USE_SINGLE_COMMAND" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;cmd /c java -Dfile.encoding=UTF-8 -jar CompactCTalkSender.jar &quot; + context.infect_user + &quot; &quot; + context.infect_password + &quot; &quot; + context.infect_roomno + &quot; D:/data/DurBatch/CompactCTalkSender/none.txt&quot;"/>
+    <elementParameter field="RADIO" name="USE_ARRAY_COMMAND" value="false"/>
+    <elementParameter field="TABLE" name="ARRAY_COMMAND" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="TABLE" name="PARAMS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSystem_2"/>
+  </node>
+  <node componentName="tSystem" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_3" show="false"/>
+    <elementParameter field="CHECK" name="ROOTDIR" value="true"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;D:\data\DurBatch\CompactCTalkSender&quot;"/>
+    <elementParameter field="RADIO" name="USE_SINGLE_COMMAND" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;cmd /c java -Dfile.encoding=UTF-8 -jar CompactCTalkSender.jar  &quot; + context.infect_user + &quot; &quot; + context.infect_password + &quot; &quot; + context.infect_roomno + &quot; D:/data/DurBatch/해외감염병정보_감염관리실_&quot;+TalendDate.formatDate(&quot;yyyyMMddHH&quot;, new Date()) + &quot;.xls&quot;"/>
+    <elementParameter field="RADIO" name="USE_ARRAY_COMMAND" value="false"/>
+    <elementParameter field="TABLE" name="ARRAY_COMMAND" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="TABLE" name="PARAMS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSystem_3"/>
+  </node>
+  <node componentName="tFileInputProperties" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputProperties_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="FILE_FORMAT" value="PROPERTIES_FORMAT"/>
+    <elementParameter field="CLOSED_LIST" name="RETRIVE_MODE" value="RETRIVE_BY_SECTION" show="false"/>
+    <elementParameter field="TEXT" name="SECTION_NAME" value="&quot;section&quot;" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/data/DurBatch/CompactCTalkSender/durbatch.properties&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputProperties_1">
+      <column key="false" length="255" name="key" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="value" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tContextLoad" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tContextLoad_2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tContextLoad_2">
+      <column defaultValue="" key="false" length="255" name="key" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="value" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tFileInputProperties_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="host"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RSRVDD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MPPHONTEL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ORDDEPTNM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ORDTM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ACPTDD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRCPNM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EXECDEPTNM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="HOMETEL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RRGSTNO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ORDDRNM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRCPCD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="HNGNM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FSEXAMFLAG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GUBUN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="REMFACT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ORDDD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RSRVFLAG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="user" lineStyle="0" metaname="user" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tFileOutputExcel_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="host"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RSRVDD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MPPHONTEL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ORDDEPTNM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ORDTM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ACPTDD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRCPNM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EXECDEPTNM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="HOMETEL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RRGSTNO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ORDDRNM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRCPCD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="HNGNM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FSEXAMFLAG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GUBUN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="REMFACT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ORDDD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RSRVFLAG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="user" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputExcel_2" offsetLabelX="0" offsetLabelY="0" source="tFileOutputExcel_2" target="tSystem_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tJavaRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="CNT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJavaRow_1" target="tDBInput_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="Integer.valueOf(globalMap.get(&quot;cnt&quot;).toString()) > 0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJavaRow_1" target="tSystem_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="Integer.valueOf(globalMap.get(&quot;cnt&quot;).toString()) == 0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFileInputProperties_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputProperties_1" target="tContextLoad_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputProperties_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputProperties_1" target="tDBInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputProperties_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
